@@ -1,0 +1,174 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>【日常】mac遗忘密码恢复 | sn0w5のジャーナル</title><meta name="author" content="sn0w5"><meta name="copyright" content="sn0w5"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Here&#39;s something encrypted, password is required to continue reading.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【日常】mac遗忘密码恢复">
+<meta property="og:url" content="https://xwisn1.github.io/2026/05/24/mac%E9%81%97%E5%BF%98%E5%AF%86%E7%A0%81/index.html">
+<meta property="og:site_name" content="sn0w5のジャーナル">
+<meta property="og:description" content="Here&#39;s something encrypted, password is required to continue reading.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://xwisn1.github.io/img/rem_background.png">
+<meta property="article:published_time" content="2026-05-25T01:37:13.554Z">
+<meta property="article:modified_time" content="2026-05-25T01:51:19.569Z">
+<meta property="article:author" content="sn0w5">
+<meta property="article:tag" content="blog">
+<meta property="article:tag" content="mac m4">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://xwisn1.github.io/img/rem_background.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "【日常】mac遗忘密码恢复",
+  "url": "https://xwisn1.github.io/2026/05/24/mac%E9%81%97%E5%BF%98%E5%AF%86%E7%A0%81/",
+  "image": "https://xwisn1.github.io/img/rem_background.png",
+  "datePublished": "2026-05-25T01:37:13.554Z",
+  "dateModified": "2026-05-25T01:51:19.569Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "sn0w5",
+      "url": "https://XWisN1.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/butterfly-icon.png"><link rel="canonical" href="https://xwisn1.github.io/2026/05/24/mac%E9%81%97%E5%BF%98%E5%AF%86%E7%A0%81/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '【日常】mac遗忘密码恢复',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="/css/custom.css"><meta name="generator" content="Hexo 8.1.1"></head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/rem_background.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">sn0w5のジャーナル</span></a><a class="nav-page-title" href="/"><span class="site-name">【日常】mac遗忘密码恢复</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">【日常】mac遗忘密码恢复</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-05-25T01:37:13.554Z" title="发表于 2026-05-24 18:37:13">2026-05-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-05-25T01:51:19.569Z" title="更新于 2026-05-24 18:51:19">2026-05-24</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="3a2235b58e5ad7b186235ad9d9228d8e226e06546aa138c4c409a6964075c258">9393eede305ccf3ad1cb36be978878e9a5659ce5a5af67b51d308ae62295bdb7e6d6f19bf0c6877f9adaf1e4f015ac8a44478a3c976ee6e1b39d34fa3be7d99448dc05a395819d311840d02e9581f1b390d2c092c1bcaa9ebbbf99832a9e5d3e6655a8492fe06abdbb12c2625344b7cc3552fa59d488e4e81f240714a2a6322a92d1c1dc97ef1261d84e87a4e49604ca197692086357202d7ed6fd36cee06c03e7b0b442ca07ade8660eb544e2b1c27c723b4fabf290d2333808b42da3be137aba18037f2a97ccbef45d6e6ffe6cbbf7f318051981c0aa0f783fdb9f52a16a97e4c0e3b0aee9df91102fec84e8ec07f82573cba2852604e45e10773d691c929872007da2c70ed3d26bb5b63e8bdda86b6912a3242b40c30d50a591e43f2448728d346caa0da3ccdd31495c848f50e0d6b3bcf1beb27450339b9cfdf37bd46cfa2cb212b896bd99310bb70fdb415d7e33a2d44082565430b491c3760640c3106555ea070f54b648a8aa37932fa48d6c4e94b6edd45e2dcecc153bd5f82524180a8f189ec530383ad25be1d3e0dad3f0d9a3f509668f92ff533af2f449c892bc73913b728762c2590e20a94df269e7aa95182bf5edc0b01f39fad71a47e574880f77c925dd911c76d1c2c42dd839c3a72f913aae2cea39d9cf405e43c517d94bae082be18475d4ed9660529112d54415f6371dd50dfe79cfecfa0f070f5ffcb294df0c960257b2e8f6d4edfb52e1951b43a288087148be33898c8f10d2801087dfb2b0389e112076f740b1d13a54b7a176436cb4a658ad8b02d7a51efcfa8595f90181e40733b04f5182898807c2846dccbca064ee9272c252f8a7ea4270b610fc3c38dd8a9b1131bd417c22b6e82ab424304c45bf6d5336a2330241a39e2e6245cfdaa4bd5f28b0dba62dedf30eb52129b1b1478d50293f50b07dde9baf3fd818bc56e7ee37a4b50b904688821bea5298e4a166e58271209864c68a106c35e8f8665d1e83fcee2b4a26d826cf6e72b243ed581473fe49f82de86f1de7787d159c74181661942617e0cd1e2e226ddac3ef932e678298b5d73ef364946ae272090af8752ad2b18fd685496580576e110a68bbc29e72a211129de3274254509b5cc2f8c963e3fa8ce74c406853796a560ba4b8adbaf7eb7e434a52f2b328ce68db06dd0c0e212bcc85c0a7d065de245e95b43e0276dda2a205f422deb3eacc54355be665f0a3771bc13785f2ae9715b7bda77fe6f76d8fb7a0f0b4ca40b2314da8657eda2e002e0c0b6976aa8e89dc67661a95c664d8ee9b5802e6517cc82519e2778015439dee56be8ad990d35c6e8e9afc6dd20b9a756511f251c2a3a9133884a51c790e38050a13d2788bd6ddab85c2addb40b685b42a4514cab27521538c9dfd5c60f0836b460d60cbd304999734b59cb3a789773ce8f61f7b4874fde652f8cec3d39a3b18d239ec084b9ff88f12b67512cde8e2737df2ea7769fa1cc3917125d127d31ae4a55d0582dc0308a0c34498558ed6d40d7d3fac2b2d6b19f2927799519ba414c9bb884b62a28699c15d1407cf518ee26a4d5cf9adbe9e861ebbb5e1b0e814a2cc5f1c4b411c7265e3b8676e692b5681c69fb818278c86c0c7c69c5c0128a970701711ae5a76a4ff12b3a3a86f5d78fcc103a609b12ac5d3418aea003208dfd2cc9a7beedb95ea6c5513c0456df58f522292a5237c6e77d50c29d1dfabf88704b9c261ce1cbadd8824633e8a1e6671c9b440518b9914b399d8a33a1c160853cb87acb3b993ef9c88dfb39937b8dbcaab54d5fe59de768c143d8d0bfe289ae27d17cfb58ba052966f372a0aed1b463a0a8a81ac85099554bdb87727c17d20fb0ecd9f2634d924e068788ebaadc4f811fdf212162fb974245151c22dcc57da10b5ed499b63ae3f9aeb875332e827e01ac03986002d9bc79685371dddbfc234b58ca70f12e368ce77cdf02ffa016e49a140ae7d7a641f21943540aedc32ec0c2de3cc00d3b8572cc51cf03197b7360c2ad56d2e23e3c0c4641d894fd93f5678d376a87326b10fc1ba049c343c017277b6a632807dc7f28f28db53edc991c0325e2b87e85fbef5d5de28426f9cbfb9967d789b4add23b25d674a843b7e13cf6baa34d0a0f6fa02feaa2b2de429d483178532565e172528e0addb8ec7463af84d6c8ef4fc67f824c935304cdbeb1f8ec9594a84f6e190260cc7bd7cd969b3cf5eaaf523a4c3b3edad2ccd402aad01e208d366b025b1b96e6c0b626f177254cb88b6cf7e0ac671fb254c4900bb82af1b41dad73c848676862ec4db5fe69ae3449858d61a3bdc192bee345961d1eb742683eb0bc937b9dfc2f63151441fb8bae4f8e0a6720d8e4772367b97730565a4a2734c620bb5457f7e4be81bf178c9e63761c10bd30d235cf9aa382e2368a3fc9efb82b88f3d171e5f1f69187ecf1022</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://XWisN1.github.io">sn0w5</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://xwisn1.github.io/2026/05/24/mac%E9%81%97%E5%BF%98%E5%AF%86%E7%A0%81/">https://xwisn1.github.io/2026/05/24/mac%E9%81%97%E5%BF%98%E5%AF%86%E7%A0%81/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://XWisN1.github.io" target="_blank">sn0w5のジャーナル</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/blog/">blog</a><a class="post-meta__tags" href="/tags/mac-m4/">mac m4</a></div><div class="post-share"><div class="social-share" data-image="/img/rem_background.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width no-desc" href="/2026/04/06/hexo_butterfly%E9%AD%94%E6%94%B9%E4%B8%8E%E4%BD%BF%E7%94%A8/" title="【日常】魔改butterfly与使用"><img class="cover" src="/img/rem_background.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">【日常】魔改butterfly与使用</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related no-desc" href="/2026/04/06/hexo_butterfly%E9%AD%94%E6%94%B9%E4%B8%8E%E4%BD%BF%E7%94%A8/" title="【日常】魔改butterfly与使用"><img class="cover" src="/img/rem_background.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-04-06</div><div class="info-item-2">【日常】魔改butterfly与使用</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/muq.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">sn0w5</div><div class="author-info-description">前天看到了小兔,昨天是小鹿,今天是你</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/XWisN1"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">是纯娱乐的绯宅,请不要伤害喵～</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content toc-div-class" style="display:none"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95"><span class="toc-number">2.</span> <span class="toc-text">解决方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%80%E5%90%8E"><span class="toc-number">3.</span> <span class="toc-text">最后</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/05/24/mac%E9%81%97%E5%BF%98%E5%AF%86%E7%A0%81/" title="【日常】mac遗忘密码恢复"><img src="/img/rem_background.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【日常】mac遗忘密码恢复"/></a><div class="content"><a class="title" href="/2026/05/24/mac%E9%81%97%E5%BF%98%E5%AF%86%E7%A0%81/" title="【日常】mac遗忘密码恢复">【日常】mac遗忘密码恢复</a><time datetime="2026-05-25T01:37:13.554Z" title="发表于 2026-05-24 18:37:13">2026-05-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/04/06/hexo_butterfly%E9%AD%94%E6%94%B9%E4%B8%8E%E4%BD%BF%E7%94%A8/" title="【日常】魔改butterfly与使用"><img src="/img/rem_background.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【日常】魔改butterfly与使用"/></a><div class="content"><a class="title" href="/2026/04/06/hexo_butterfly%E9%AD%94%E6%94%B9%E4%B8%8E%E4%BD%BF%E7%94%A8/" title="【日常】魔改butterfly与使用">【日常】魔改butterfly与使用</a><time datetime="2026-04-07T03:00:15.794Z" title="发表于 2026-04-06 20:00:15">2026-04-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/04/06/hello-world/" title="Hello World">Hello World</a><time datetime="2026-04-07T02:29:52.032Z" title="发表于 2026-04-06 19:29:52">2026-04-06</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By sn0w5</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><div class="js-pjax"></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
