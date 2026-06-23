@@ -1,0 +1,2254 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <script>
+  (function() {
+    var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    
+    // Все варианты китайского языка
+    var chineseLangs = ['zh', 'zh-cn', 'zh-tw', 'zh-hk', 'zh-sg', 'zh-mo', 'zh-hans', 'zh-hant'];
+    
+    var isChinese = chineseLangs.some(function(l) {
+      return lang === l || lang.startsWith(l + '-') || lang.startsWith('zh');
+    });
+    
+    if (!isChinese) {
+      document.documentElement.style.display = 'none';
+      window.location.replace('https://error.maovoice.org');
+    }
+  })();
+</script>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "wqmii9twr3");
+</script>
+<link rel="icon"
+        href="data:image/x-icon;base64,AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAABMLAAATCwAAAAAAAAAAAAAAAAAA/5BMAP+QSwD/kEsP/5BLYf+OSrz/jUnu/4xJ/v+LSP//ikf//4hG//+HRv//hkX//4VE//+EQ///gkP//4FC//+AQf//f0H//35A//99P///ez7//3o+//95Pf//eDz+/3c87v91O7z/dDpi/3M6EP90OgD/cjkAAAAAAP+STQD/kUwA/5JMKv+RS67/kEv3/49K//+NSf//jEj//4tI//+KR///iUb//4dG//+GRf//hUT//4RD//+CQ///gUL//4BB//9/Qf//fkD//30///97Pv//ej7//3k9//94PP//dzz//3U7//90Ovf/czmv/3I5Kv9zOQD/cjgA/5JMAP+TTCr/kkzL/5FL//+QS///j0r//41J//+MSP//i0j//4pH//+JRv//h0b//4ZF//+FRP//g0P//4JD//+BQv//gEH//39A//9+QP//fT///3s+//96Pv//eT3//3g8//93PP//dTv//3Q6//9zOf//cjnL/3E4Kv9xOAD/lE0P/5NNrv+STP//kUv//5BL//+OSv//jUn//4xI//+LSP//ikf//4hG//+HRv//hkX//4VE//+EQ///gkP//4FC//+AQf//f0H//35A//99QP//ez7//3o+//95Pf//eDz//3c7//91O///dDr//3M5//9yOf//cTiu/3A4D/+UTWL/k032/5JM//+RS///kEv//49K//+NSf//jEj//4tI//+KR///iEb//4dG//+GRf//hUT//4RD//+CQ///gUL//4BB//9/Qf//fkD//30///97Pv//ej7//3k9//94PP//dzz//3U7//90Ov//czn//3I4//9xOPb/cDhh/5RNvP+TTf//kkz//5FL//+QS///jkr//41J//+MSP//i0j//4pH//+JRv//h0b//4ZF//+FRP//hEP//4JD//+BQv//gEH//39B//9+QP//fT///3s+//96Pv//eT3//3g8//93PP//dTv//3Q6//9zOf//cjn//3E4//9wN7z/lE3t/5NN//+STP//kUv//5BL//+PSv//jUn//4xI//+LSP//ikf//4hG//+GRP//hUP//4RC//+DQ///gkP//4FC//+AQf//f0D//35A//98P///ez7//3o+//95Pf//eDz//3Y7//91O///dDr//3M5//9yOf//cTj//3A37f+UTf3/k03//5JM//+RS///kEv//49K//+NSf//jEj//4tI//+JR///jEz//5tl//+kc///nGf//4pN//+BQf//gUL//4BB//9/QP//fkD//3w///97Pv//ej7//3k9//94PP//dzv//3U7//90Ov//czn//3I5//9xOP//cDf9/5RN//+TTf//kkz//5FL//+QS///jkr//41J//+MSf//i0f//4xK//+0i///zbL//8+1///Nsv//vZv//5xq//+ERv//f0D//39A//9+QP//fD///3s+//96Pv//eT3//3g8//93PP//dTv//3Q6//9zOf//cjn//3E4//9wN///lE3//5NN//+STP//kUv//5BL//+OSv//jUn//4xJ//+LSP//jEr//7SK///OtP//z7b//860///Otf//y7D//7WP//+SXP//f0H//30///99P///ez7//3o+//95Pf//eDz//3c8//91O///dDr//3M5//9yOf//cTj//3A3//+UTv//k03//5JM//+RS///kEv//49K//+NSf//jEj//4tH//+OTv//j1D//6Nw///Dov//z7X//861///NtP//zrX//8aq//+qgf//iVD//3w+//97Pv//ej7//3k9//94PP//dzz//3U7//90Ov//czn//3I5//9xOP//cDf//5VN//+TTf//kkz//5FL//+QS///j0r//41J//+LR///l1r//9vG///Uu///nWj//49T//+tgf//yKz//861///Ns///zbT//8y0///Aov//nnH//4FH//95PP//eT3//3g8//92O///dTv//3Q6//9zOf//cjn//3E4//9wN///lE3//5NN//+STP//kUv//5BL//+PSv//jUn//4tG//+jbv//+PX////////y6v//v53//5BV//+UXf//t5L//8yx///NtP//zLP//8y0///Ksf//t5b//5Bd//95Pf//eDz//3c8//91O///dDr//3M5//9yOf//cTj//3A3//+UTf//k03//5JM//+RS///kEv//49K//+NSf//i0b//6Nu///59f/////////////+/f//5NX//6p+//+JTf//nmz//8Cg///MtP//y7P//8uy///LtP//wab//4xZ//93O///dzz//3U7//90Ov//czn//3I5//9xOP//cDf//5RN//+TTf//kkz//5FL//+QS///j0r//41J//+LRv//o27///n1////////////////////////+vf//9G5//+XY///iU///6l////Fqv//zLT//8qy///LtP//rIb//3g9//92O///dTv//3Q6//9zOf//cjn//3E4//9wN///lE7//5NN//+STP//kUv//5BL//+PSv//jUn//4tG//+jbv//+fX///////////////////////////////////Dp//+6mf//ilD//49Z//+0kP//ybD//8y1//+4mf//fEL//3Y7//91O///dDr//3M5//9yOf//cTj//3A3//+UTf//k03//5JM//+RS///kEv//45K//+NSf//i0b//6Nu///59f////////////////////////////////////////79///h0///pHn//4NJ//+Zav//u53//6mD//95P///djv//3U7//90Ov//czn//3I5//9xOP//cDf//5RN//+TTf//kkz//5FL//+QS///j0r//41J//+LRv//o27///n1///////////////////////////////////////////////////59v//zbb//5Bc//+BR///fkT//3g8//93PP//dTv//3Q6//9zOf//cjn//3E4//9wN///lE3//5NN//+STP//kUv//5BL//+PSv//jUn//4tG//+jbv//+fX/////////////////////////////////////////////////////////////3Mz//4BG//94PP//eDz//3c8//91O///dDr//3M5//9yOf//cTj//3A3//+UTf//k03//5JM//+RS///kEv//49K//+NSf//i0b//6Nt///49P////////////////////////////////////////////////////////bx//+8nf//fUH//3k9//94PP//dzv//3U7//90Ov//czn//3I5//9xOP//cDf//5RN//+TTf//kkz//5FL//+QS///j0r//41J//+LR///m2H///Hq//////////////////////////////////////////////v5///Wwv//m23//31A//96Pf//eT3//3g8//93PP//dTv//3Q6//9zOf//cjn//3E4//9wN///lE3//5NN//+STP//kUv//5BL//+OSv//jUn//4xI//+NS///0rj///////////////////////////////////79///k1v//q4L//4JH//97Pf//ez7//3o+//95Pf//eDz//3c8//91O///dDr//3M5//9yOP//cTj//3A3//+UTf//k03//5JM//+RS///kEv//49K//+NSf//jEn//4pG//+bYf//4dH////+///////////////////v5///vJr//4tS//99Pv//fT///30///97Pv//ej7//3k9//94PP//djv//3U7//90Ov//czn//3I5//9xOP//cDf//5RN//+TTf//kkz//5FL//+QS///j0r//41J//+MSP//i0j//4lF//+UWf//vZn//9nF///byP//wqL//5Zh//+AQf//f0D//39B//9+QP//fD///3s+//96Pv//eT3//3g8//93O///dTv//3Q6//9zOf//cjn//3E4//9wN///lE39/5NN//+STP//kUv//5BL//+PSv//jUn//4xI//+LSP//ikf//4hF//+GRP//iEj//4dI//+DQv//gUH//4FC//+AQf//f0D//35A//98P///ez7//3o+//95Pf//eDz//3c8//91O///dDr//3M5//9yOf//cTj//3A3/f+UTe3/k03//5JM//+RS///kEv//45K//+NSf//jEn//4tI//+KR///iUb//4dG//+GRf//hUT//4RD//+CQ///gUL//4BB//9/QP//fkD//30///97Pv//ej7//3k9//94PP//dzz//3U7//90Ov//czn//3I5//9xOP//cDft/5RNvP+TTf//kkz//5FL//+QS///j0r//41J//+MSP//i0j//4pH//+JRv//h0b//4ZF//+FRP//hET//4JD//+BQv//gEH//39B//9+QP//fD///3s+//96Pv//eT3//3g8//93PP//dTv//3Q6//9zOf//cjn//3E4//9wN7z/lE1h/5NN9v+STP//kUv//5BL//+PSv//jUn//4xI//+LSP//ikf//4lG//+HRv//hkX//4VE//+DQ///gkP//4FC//+AQf//f0H//35A//99P///ez7//3o+//95Pf//eDz//3Y7//91O///dDr//3M5//9yOf//cTj2/3A3Yv+UTQ//k02u/5JM//+RS///kEv//49K//+OSf//jEj//4tI//+KR///iUb//4dG//+GRf//hUT//4RD//+CQ///gUL//4BB//9/Qf//fkD//30///97Pv//ej7//3k9//94PP//dzz//3U7//90Ov//czn//3I5//9xOK7/cDgP/5NMAP+TTSr/kkzL/5FL//+QS///j0r//41J//+MSP//i0j//4pH//+JRv//iEX//4ZF//+FRP//hEP//4JD//+BQv//gEH//39B//9+QP//fD///3s+//96Pv//eT3//3g8//93PP//dTv//3Q6//9zOf//cjnL/3E4Kv9xOAD/kk0A/5FLAP+STCr/kUuv/5BL9/+OSv//jUn//4xI//+LSP//ikf//4lG//+HRf//hkX//4VE//+EQ///gkP//4FC//+AQf//f0D//35A//99P///ez7//3o+//95Pf//eDz//3c8//91O///dDr3/3M5rv9yOSr/czkA/3I4AAAAAAD/kkwA/5BLAP+QSxD/kEth/45KvP+NSe3/jEj+/4tI//+KR///iUb//4dG//+GRf//hUT//4RD//+CQ///gUL//4BB//9/QP//fkD//30///97Pv//ej7//3k9//94PP7/dzzu/3U7vP90OmH/czkP/3Q6AP90OAAAAAAA4AAAB8AAAAOAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAABwAAAA+AAAAc=">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MaoVoice — 高清语音平台</title>
+<meta property="og:title" content="MaoVoice" />
+<meta property="og:description" content="高清语音平台" />
+<meta property="og:image" content="https://i.ibb.co/wNhsB723/image.png" />
+<meta name="description" content="">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --bg:#17181c;
+  --surface:#1e2024;
+  --card:#25272d;
+  --card2:#2d3038;
+  --hover:#333640;
+  --accent:#5865f2;
+  --accent2:#4752c4;
+  --accent3:rgba(88,101,242,.12);
+  --t1:#f2f3f5;
+  --t2:#b5bac1;
+  --t3:#72767d;
+  --green:#23a55a;
+  --green-bg:rgba(35,165,90,.12);
+  --red:#ed4245;
+  --border:rgba(255,255,255,.06);
+  --border2:rgba(255,255,255,.1);
+  --r:8px;
+  --r2:12px;
+  --r3:16px;
+}
+
+body{
+  font-family:'Noto Sans SC',sans-serif;
+  background:var(--bg);
+  color:var(--t1);
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+/* ── SCREEN MANAGER ── */
+.screen{display:none;min-height:100vh;flex-direction:column}
+.screen.active{display:flex}
+
+@media(max-width:768px){
+  .screen{min-height:100dvh}
+  #screen-landing.active{
+    height:auto;min-height:100dvh;
+    overflow-y:auto;overflow-x:hidden;
+  }
+  #screen-joining.active,
+  #screen-room.active,
+  #screen-call.active{
+    height:100dvh;
+    overflow:hidden;
+    background:var(--bg);
+  }
+}
+
+/* ── SHARED NAV ── */
+nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 48px;height:64px;
+  background:var(--surface);
+  border-bottom:1px solid var(--border);
+  position:sticky;top:0;z-index:50;flex-shrink:0;
+}
+.logo{display:flex;align-items:center;gap:10px;font-size:19px;font-weight:700;color:var(--t1);text-decoration:none;cursor:default}
+.logo-mark{
+  width:36px;height:36px;background:var(--accent);border-radius:10px;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.logo-mark svg{width:18px;height:18px;fill:white}
+.nav-pill{font-size:11px;font-weight:600;letter-spacing:.6px;color:var(--accent);background:var(--accent3);padding:3px 8px;border-radius:4px;margin-left:4px}
+.nav-right{display:flex;gap:10px;align-items:center}
+
+/* ── BUTTONS ── */
+.btn{padding:9px 22px;border-radius:var(--r);font-size:14px;font-weight:500;cursor:pointer;border:none;transition:all .15s;font-family:'Noto Sans SC',sans-serif;white-space:nowrap}
+.btn-ghost{background:transparent;color:var(--t2);border:1px solid var(--border2)}
+.btn-ghost:hover{background:var(--hover);color:var(--t1);border-color:var(--border2)}
+.btn-accent{background:var(--accent);color:white}
+.btn-accent:hover{background:var(--accent2);transform:translateY(-1px)}
+.btn-accent:active{transform:translateY(0)}
+.btn-large{padding:14px 36px;font-size:15px;border-radius:var(--r2);font-weight:600}
+.btn-danger{background:var(--red);color:white}
+.btn-danger:hover{background:#c5383b}
+.btn-back{background:none;border:none;color:var(--t3);cursor:pointer;font-size:14px;font-family:'Noto Sans SC',sans-serif;display:flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r);transition:all .15s}
+.btn-back:hover{background:var(--hover);color:var(--t2)}
+
+/* ── LANDING NAV EXTENDED ── */
+.main-nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 40px;height:64px;
+  background:rgba(30,32,36,.92);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+  position:sticky;top:0;z-index:200;flex-shrink:0;
+}
+.nav-center{display:flex;align-items:center;gap:2px}
+.nav-link{
+  position:relative;display:flex;align-items:center;gap:5px;
+  padding:8px 14px;border-radius:var(--r);
+  font-size:14px;color:var(--t2);cursor:pointer;
+  transition:all .15s;white-space:nowrap;user-select:none;
+}
+.nav-link:hover{background:var(--hover);color:var(--t1)}
+.nav-link .chevron{
+  width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;
+  transition:transform .2s;flex-shrink:0;
+}
+.nav-link:hover .chevron{transform:rotate(180deg)}
+.dropdown{
+  position:absolute;top:calc(100% + 8px);left:0;min-width:200px;
+  background:var(--card);border:1px solid var(--border2);border-radius:var(--r2);
+  padding:6px;
+  opacity:0;pointer-events:none;transform:translateY(-6px);
+  transition:opacity .15s,transform .15s;z-index:300;
+  box-shadow:0 16px 40px rgba(0,0,0,.4);
+}
+.nav-link:hover .dropdown{opacity:1;pointer-events:all;transform:translateY(0)}
+.dd-item{
+  display:flex;align-items:center;gap:10px;
+  padding:9px 12px;border-radius:var(--r);cursor:pointer;
+  font-size:13px;color:var(--t2);transition:all .12s;text-decoration:none;
+}
+.dd-item:hover{background:var(--hover);color:var(--t1)}
+.dd-icon{
+  width:30px;height:30px;border-radius:7px;background:var(--accent3);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.dd-icon svg{width:15px;height:15px;stroke:var(--accent);stroke-width:2;fill:none}
+.dd-text{}
+.dd-text strong{display:block;font-size:13px;font-weight:500;color:var(--t1)}
+.dd-text span{font-size:11px;color:var(--t3)}
+.dd-divider{height:1px;background:var(--border);margin:4px 0}
+
+/* ── LANDING: HERO ── */
+.hero-section{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:80px 72px 80px;text-align:center;
+  position:relative;overflow:hidden;
+  background:var(--bg);
+}
+.hero-mesh{
+  position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 700px 500px at 50% 40%,rgba(88,101,242,.13),transparent),
+    radial-gradient(ellipse 400px 300px at 80% 80%,rgba(35,165,90,.05),transparent);
+}
+.hero-left{position:relative;z-index:1;max-width:640px;width:100%}
+.hero-sub{max-width:520px;margin-left:auto;margin-right:auto}
+.hero-badges{justify-content:center}
+.join-box{max-width:500px;margin-left:auto;margin-right:auto;text-align:left}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--accent3);border:1px solid rgba(88,101,242,.25);
+  color:#a5adfc;font-size:12px;font-weight:500;padding:5px 12px;border-radius:20px;
+  margin-bottom:24px;
+}
+.hero-tag-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:blink 2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
+h1{font-size:clamp(34px,4vw,54px);font-weight:900;line-height:1.12;margin-bottom:18px;letter-spacing:-1px}
+h1 .hl{color:var(--accent)}
+.hero-sub{font-size:16px;color:var(--t2);line-height:1.75;max-width:440px;margin-bottom:36px}
+.hero-badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.hbadge{
+  display:flex;align-items:center;gap:6px;
+  font-size:12px;color:var(--t3);
+}
+.hbadge svg{width:14px;height:14px;fill:var(--green)}
+
+/* Join box (in hero) */
+.join-box{
+  background:var(--surface);
+  border:1px solid var(--border2);
+  border-radius:var(--r3);
+  padding:28px 28px 24px;
+  width:100%;
+}
+.join-box-label{font-size:12px;color:var(--t3);margin-bottom:12px;letter-spacing:.3px;text-transform:uppercase}
+.input-row{display:flex;gap:10px}
+.room-input{
+  flex:1;padding:12px 16px;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  color:var(--t1);
+  font-size:18px;font-weight:600;letter-spacing:4px;
+  font-family:'JetBrains Mono',monospace;
+  outline:none;transition:border-color .15s;
+}
+.room-input:focus{border-color:var(--accent)}
+.room-input::placeholder{color:var(--t3);letter-spacing:1px;font-weight:400;font-size:13px;font-family:'Noto Sans SC',sans-serif}
+.room-input.shake{animation:shake .3s ease}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.join-hint{font-size:12px;color:var(--t3);margin-top:12px}
+.join-hint a{color:var(--accent);text-decoration:none}
+.join-hint a:hover{text-decoration:underline}
+
+/* Hero right: live preview widget */
+.hero-right{position:relative;z-index:1}
+.preview-card{
+  background:var(--surface);border:1px solid var(--border2);border-radius:var(--r3);
+  overflow:hidden;
+}
+.preview-titlebar{
+  display:flex;align-items:center;gap:8px;
+  padding:12px 16px;background:var(--card);border-bottom:1px solid var(--border);
+}
+.tbar-dots{display:flex;gap:5px}
+.tbar-dot{width:10px;height:10px;border-radius:50%}
+.tbar-title{font-size:12px;color:var(--t3);margin-left:4px;font-family:'JetBrains Mono',monospace}
+.preview-body{padding:12px}
+.preview-server{
+  display:flex;align-items:center;gap:10px;
+  padding:8px 10px;border-radius:var(--r);cursor:pointer;
+  transition:background .12s;
+}
+.preview-server:hover{background:var(--hover)}
+.preview-server-ico{
+  width:36px;height:36px;border-radius:10px;background:var(--accent);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px;
+}
+.preview-server-info strong{display:block;font-size:13px;font-weight:600;color:var(--t1)}
+.preview-server-info span{font-size:11px;color:var(--t3)}
+.preview-divider{height:1px;background:var(--border);margin:8px 0}
+.preview-section-label{font-size:10px;font-weight:700;letter-spacing:1px;color:var(--t3);padding:4px 10px;text-transform:uppercase}
+.preview-room{
+  display:flex;align-items:center;gap:8px;
+  padding:6px 10px;border-radius:var(--r);cursor:pointer;
+  transition:background .12s;
+}
+.preview-room:hover{background:var(--hover)}
+.preview-room svg{width:14px;height:14px;fill:var(--t3);flex-shrink:0}
+.preview-room-name{font-size:13px;color:var(--t2);flex:1}
+.preview-room.active .preview-room-name{color:var(--t1);font-weight:500}
+.preview-avatars{display:flex;margin-left:auto}
+.mini-avatar{
+  width:18px;height:18px;border-radius:50%;border:2px solid var(--surface);
+  margin-left:-6px;font-size:7px;font-weight:700;color:white;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.mini-avatar:first-child{margin-left:0}
+.preview-user{
+  display:flex;align-items:center;gap:8px;
+  padding:5px 10px 5px 24px;border-radius:var(--r);
+}
+.mini-av2{
+  width:24px;height:24px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:9px;font-weight:700;color:white;flex-shrink:0;
+}
+.preview-user-name{font-size:12px;color:var(--t2)}
+.speaking-wave{display:flex;align-items:center;gap:2px;margin-left:auto}
+.sw-bar{width:2px;border-radius:2px;background:var(--green);animation:sw .6s ease-in-out infinite}
+.sw-bar:nth-child(2){animation-delay:.1s;height:8px}
+.sw-bar:nth-child(1){animation-delay:.2s;height:5px}
+.sw-bar:nth-child(3){animation-delay:.05s;height:10px}
+.sw-bar:nth-child(4){animation-delay:.15s;height:6px}
+@keyframes sw{0%,100%{transform:scaleY(.4)}50%{transform:scaleY(1)}}
+.preview-bottom{
+  padding:10px 12px;border-top:1px solid var(--border);
+  background:var(--card);display:flex;align-items:center;gap:8px;
+}
+.preview-self{display:flex;align-items:center;gap:8px;flex:1}
+.preview-self-av{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#a29bfe,#6c5ce7);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:white;flex-shrink:0}
+.preview-self-name{font-size:12px;font-weight:500;color:var(--t1)}
+.preview-self-tag{font-size:10px;color:var(--green)}
+.preview-ctrl-icons{display:flex;gap:4px}
+.pci{width:28px;height:28px;border-radius:6px;background:var(--hover);display:flex;align-items:center;justify-content:center;cursor:pointer}
+.pci svg{width:13px;height:13px;fill:var(--t2)}
+
+/* ── STATS BAR ── */
+.stats-bar{
+  display:flex;justify-content:center;
+  border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+  background:var(--surface);flex-shrink:0;
+}
+.stat-item{padding:20px 52px;text-align:center;border-right:1px solid var(--border)}
+.stat-item:last-child{border-right:none}
+.stat-num{font-size:24px;font-weight:700;color:var(--t1);font-family:'JetBrains Mono',monospace}
+.stat-num .accent{color:var(--accent)}
+.stat-label{font-size:12px;color:var(--t3);margin-top:3px;letter-spacing:.3px}
+
+/* ── FEATURES SECTION ── */
+.section{padding:72px 72px;background:var(--bg)}
+.section.alt{background:var(--surface)}
+.section-label{font-size:12px;font-weight:600;letter-spacing:1.5px;color:var(--accent);text-transform:uppercase;margin-bottom:12px}
+.section-title{font-size:clamp(24px,3vw,36px);font-weight:800;margin-bottom:12px;letter-spacing:-.5px}
+.section-sub{font-size:15px;color:var(--t2);line-height:1.7;max-width:520px;margin-bottom:48px}
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.feat{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:var(--r2);padding:24px;
+  transition:border-color .2s,transform .2s;cursor:default;
+}
+.feat:hover{border-color:rgba(88,101,242,.3);transform:translateY(-2px)}
+.feat-ico{
+  width:40px;height:40px;border-radius:var(--r);background:var(--accent3);
+  display:flex;align-items:center;justify-content:center;margin-bottom:14px;
+}
+.feat-ico svg{width:20px;height:20px;stroke:var(--accent);stroke-width:2;fill:none}
+.feat h4{font-size:14px;font-weight:600;margin-bottom:6px}
+.feat p{font-size:13px;color:var(--t3);line-height:1.65}
+
+/* ── HOW IT WORKS ── */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative}
+.steps::before{
+  content:'';position:absolute;top:28px;left:calc(33% + 24px);right:calc(33% + 24px);
+  height:1px;background:var(--border2);z-index:0;
+}
+.step{text-align:center;padding:0 32px;position:relative;z-index:1}
+.step-num{
+  width:56px;height:56px;border-radius:50%;
+  border:2px solid var(--accent);background:var(--accent3);
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;font-weight:700;color:var(--accent);
+  margin:0 auto 20px;
+}
+.step h4{font-size:15px;font-weight:600;margin-bottom:8px}
+.step p{font-size:13px;color:var(--t3);line-height:1.65}
+
+/* ── TESTIMONIALS ── */
+.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.tcard{
+  background:var(--card);border:1px solid var(--border);border-radius:var(--r2);padding:24px;
+}
+.tcard-stars{display:flex;gap:3px;margin-bottom:14px}
+.star{width:14px;height:14px;fill:#fee75c}
+.tcard p{font-size:13px;color:var(--t2);line-height:1.7;margin-bottom:18px}
+.tcard-user{display:flex;align-items:center;gap:10px}
+.tcard-av{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:white;flex-shrink:0}
+.tcard-name{font-size:13px;font-weight:600;color:var(--t1)}
+.tcard-role{font-size:11px;color:var(--t3)}
+
+/* ── DOWNLOAD SECTION ── */
+.dl-section{
+  padding:72px;
+  background:var(--bg);
+  border-top:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;gap:48px;
+}
+.dl-left{}
+.dl-platforms{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.dl-btn{
+  display:flex;align-items:center;gap:10px;
+  background:var(--card);border:1px solid var(--border2);border-radius:var(--r2);
+  padding:12px 20px;cursor:pointer;transition:all .15s;text-decoration:none;
+}
+.dl-btn:hover{background:var(--hover);border-color:var(--border2);transform:translateY(-1px)}
+.dl-btn svg{width:22px;height:22px;fill:var(--t2);flex-shrink:0}
+.dl-btn-text strong{display:block;font-size:13px;font-weight:600;color:var(--t1)}
+.dl-btn-text span{font-size:11px;color:var(--t3)}
+
+/* ── PRICING ── */
+.pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:700px}
+.price-card{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:var(--r2);padding:28px;
+}
+.price-card.featured{border-color:var(--accent);background:var(--accent3)}
+.price-badge{
+  display:inline-block;background:var(--accent);color:white;
+  font-size:11px;font-weight:600;padding:3px 10px;border-radius:4px;margin-bottom:16px;
+}
+.price-name{font-size:18px;font-weight:700;margin-bottom:4px}
+.price-amount{font-size:36px;font-weight:900;color:var(--t1);font-family:'JetBrains Mono',monospace}
+.price-amount sup{font-size:16px;font-weight:400;color:var(--t3);vertical-align:top;margin-top:8px;display:inline-block}
+.price-period{font-size:13px;color:var(--t3);margin-bottom:20px}
+.price-feats{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:24px}
+.price-feats li{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--t2)}
+.price-feats li svg{width:14px;height:14px;fill:var(--green);flex-shrink:0}
+.price-feats li.dim{color:var(--t3)}
+.price-feats li.dim svg{fill:var(--t3)}
+
+/* ── FOOTER ── */
+.footer{
+  background:var(--surface);border-top:1px solid var(--border);
+  padding:48px 72px 32px;
+}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:40px}
+.footer-brand .logo{margin-bottom:12px}
+.footer-brand p{font-size:13px;color:var(--t3);line-height:1.7;max-width:220px}
+.footer-col h5{font-size:12px;font-weight:600;letter-spacing:.8px;color:var(--t2);text-transform:uppercase;margin-bottom:14px}
+.footer-col a{display:block;font-size:13px;color:var(--t3);text-decoration:none;margin-bottom:8px;transition:color .12s;cursor:pointer}
+.footer-col a:hover{color:var(--t1)}
+.footer-bottom{
+  display:flex;align-items:center;justify-content:space-between;
+  border-top:1px solid var(--border);padding-top:24px;
+  font-size:12px;color:var(--t3);
+}
+.footer-links{display:flex;gap:20px}
+.footer-links a{color:var(--t3);text-decoration:none;cursor:pointer}
+.footer-links a:hover{color:var(--t1)}
+
+/* ── JOINING SCREEN ── */
+#screen-joining{align-items:center;justify-content:center;gap:20px;background:var(--bg)}
+.spinner{width:44px;height:44px;border-radius:50%;border:3px solid var(--border2);border-top-color:var(--accent);animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.joining-text{font-size:15px;color:var(--t2)}
+.joining-sub{font-size:13px;color:var(--t3)}
+
+/* ── ROOM SCREEN ── */
+#screen-room{align-items:center;justify-content:center;background:var(--bg)}
+.room-wrap{width:100%;max-width:440px;padding:24px}
+.room-card{
+  background:var(--surface);
+  border:1px solid var(--border2);
+  border-radius:var(--r3);
+  padding:40px 36px 36px;
+  text-align:center;
+}
+.room-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--accent3);color:#a5adfc;
+  font-size:12px;font-weight:600;letter-spacing:.5px;
+  padding:5px 12px;border-radius:20px;
+  margin-bottom:28px;
+  font-family:'JetBrains Mono',monospace;
+}
+.user-avatar{
+  width:88px;height:88px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:30px;font-weight:700;color:white;
+  margin:0 auto 16px;position:relative;
+  flex-shrink:0;
+}
+.online-dot{
+  position:absolute;bottom:4px;right:4px;
+  width:20px;height:20px;border-radius:50%;
+  background:var(--green);
+  border:3px solid var(--surface);
+}
+.user-name{font-size:22px;font-weight:700;margin-bottom:6px}
+.user-status{font-size:13px;color:var(--green);display:flex;align-items:center;justify-content:center;gap:6px;margin-bottom:4px}
+.user-status::before{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green)}
+.user-sub{font-size:13px;color:var(--t3);margin-bottom:24px}
+.room-meta{background:var(--card);border-radius:var(--r);padding:0 16px;margin-bottom:24px}
+.room-meta-row{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:10px 0;font-size:13px;
+  border-bottom:1px solid var(--border);
+}
+.room-meta-row:last-child{border-bottom:none}
+.room-meta-row span:first-child{color:var(--t3)}
+.room-meta-row span:last-child{color:var(--t1);font-weight:500}
+.quality-good{color:var(--green) !important;display:flex;align-items:center;gap:5px}
+.quality-good::before{content:'●';font-size:8px}
+
+/* ── CALL SCREEN ── */
+#screen-call{background:var(--bg)}
+.call-header{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 32px;height:60px;
+  background:var(--surface);
+  border-bottom:1px solid var(--border);
+  flex-shrink:0;
+}
+.call-header-left{display:flex;align-items:center;gap:14px}
+.live-dot{
+  display:flex;align-items:center;gap:6px;
+  background:rgba(237,66,69,.15);border:1px solid rgba(237,66,69,.3);
+  color:var(--red);font-size:11px;font-weight:700;letter-spacing:.8px;
+  padding:4px 10px;border-radius:4px;
+}
+.live-dot::before{content:'●';font-size:7px;animation:blink 1.5s infinite}
+.call-room-label{font-size:13px;color:var(--t3);font-family:'JetBrains Mono',monospace}
+.call-room-label strong{color:var(--t2)}
+.call-timer{font-size:13px;color:var(--t3);font-family:'JetBrains Mono',monospace;font-variant-numeric:tabular-nums}
+.conn-status{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--t3)}
+.conn-dot{width:7px;height:7px;border-radius:50%;background:var(--green)}
+
+.call-body{
+  flex:1;display:flex;align-items:center;justify-content:center;
+  gap:56px;padding:40px;
+}
+.participant{display:flex;flex-direction:column;align-items:center;gap:14px;width:180px}
+.p-avatar{
+  width:128px;height:128px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:44px;font-weight:700;color:white;
+  position:relative;overflow:visible;
+  flex-shrink:0;
+}
+.p-ring{
+  position:absolute;inset:-8px;border-radius:50%;
+  border:3px solid transparent;
+  transition:border-color .2s;
+}
+.p-ring.speaking{border-color:var(--green);animation:ring-pulse 1.2s ease-in-out infinite}
+@keyframes ring-pulse{
+  0%,100%{transform:scale(1);opacity:1}
+  50%{transform:scale(1.04);opacity:.75}
+}
+.p-name{font-size:15px;font-weight:600;color:var(--t1)}
+.p-badge{
+  display:flex;align-items:center;gap:6px;
+  font-size:12px;padding:4px 10px;border-radius:20px;
+}
+.p-badge.speaking-badge{background:var(--green-bg);color:var(--green)}
+.p-badge.muted-badge{background:rgba(237,66,69,.12);color:var(--red)}
+.wave-canvas{width:160px;height:36px;display:block}
+
+.call-controls{
+  padding:20px;background:var(--surface);
+  border-top:1px solid var(--border);
+  display:flex;align-items:flex-end;justify-content:center;gap:20px;
+  flex-shrink:0;
+}
+.ctrl-wrap{display:flex;flex-direction:column;align-items:center;gap:6px}
+.ctrl-label{font-size:11px;color:var(--t3)}
+.ctrl-btn{
+  width:54px;height:54px;border-radius:50%;border:none;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:all .15s;
+}
+.ctrl-btn svg{width:22px;height:22px;fill:currentColor;pointer-events:none}
+.ctrl-muted{background:var(--red);color:white}
+.ctrl-muted:hover{background:#c5383b;transform:scale(1.07)}
+.ctrl-normal{background:var(--card);color:var(--t2);border:1px solid var(--border)}
+.ctrl-normal:hover{background:var(--hover);color:var(--t1)}
+.ctrl-leave{width:62px;height:62px;background:var(--red);color:white}
+.ctrl-leave:hover{background:#c5383b;transform:scale(1.06)}
+
+/* ── MODAL ── */
+.modal-bg{
+  position:fixed;inset:0;background:rgba(0,0,0,.75);
+  display:flex;align-items:center;justify-content:center;
+  z-index:200;opacity:0;pointer-events:none;transition:opacity .2s;
+}
+.modal-bg.open{opacity:1;pointer-events:all}
+.modal{
+  background:var(--surface);
+  border:1px solid var(--border2);
+  border-radius:var(--r3);
+  padding:40px 36px 36px;
+  max-width:400px;width:90%;
+  text-align:center;position:relative;
+  transform:scale(.93) translateY(8px);
+  transition:transform .25s cubic-bezier(.34,1.56,.64,1);
+}
+.modal-bg.open .modal{transform:scale(1) translateY(0)}
+.modal-x{
+  position:absolute;top:14px;right:16px;
+  background:none;border:none;color:var(--t3);cursor:pointer;
+  font-size:18px;padding:6px 8px;border-radius:var(--r);font-family:sans-serif;
+}
+.modal-x:hover{background:var(--hover);color:var(--t1)}
+.modal-icon{
+  width:68px;height:68px;border-radius:50%;
+  background:var(--accent3);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 20px;
+}
+.modal-icon svg{width:30px;height:30px;fill:var(--accent)}
+.modal h2{font-size:20px;font-weight:700;margin-bottom:10px}
+.modal-desc{font-size:14px;color:var(--t2);line-height:1.7;margin-bottom:8px}
+.modal-security{
+  display:flex;align-items:center;justify-content:center;gap:6px;
+  font-size:12px;color:var(--t3);margin-bottom:28px;
+}
+.modal-security svg{width:13px;height:13px;fill:var(--t3)}
+.modal-actions{display:flex;flex-direction:column;gap:10px}
+.auth-btn{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  padding:13px 20px;border-radius:var(--r);border:1px solid var(--border2);
+  background:var(--card);color:var(--t1);cursor:pointer;font-size:14px;font-weight:500;
+  font-family:'Noto Sans SC',sans-serif;transition:all .15s;
+}
+.auth-btn:hover{background:var(--hover);border-color:var(--border2)}
+.auth-btn.primary{background:var(--accent);border-color:transparent;color:white}
+.auth-btn.primary:hover{background:var(--accent2)}
+.auth-btn.steam-btn{
+  background:linear-gradient(135deg,#1b2838,#2a475e);
+  border-color:rgba(255,255,255,.15);color:#c7d5e0;font-weight:600;
+}
+.auth-btn.steam-btn:hover{background:linear-gradient(135deg,#2a475e,#1b2838);color:white}
+.auth-btn.steam-btn svg{fill:#c7d5e0}
+
+/* ── TOAST ── */
+.toast-container{
+  position:fixed;top:20px;right:20px;z-index:9999;
+  display:flex;flex-direction:column;gap:10px;pointer-events:none;
+}
+.toast{
+  display:flex;align-items:center;gap:10px;
+  padding:12px 16px;border-radius:var(--r2);
+  font-size:13px;font-weight:500;min-width:220px;max-width:320px;
+  opacity:0;transform:translateX(16px);
+  transition:opacity .25s,transform .25s;pointer-events:none;
+  box-shadow:0 4px 20px rgba(0,0,0,.4);
+}
+.toast.show{opacity:1;transform:translateX(0)}
+.toast.error{background:#2d1a1b;border:1px solid rgba(237,66,69,.35);color:#f87171}
+.toast.success{background:#142619;border:1px solid rgba(35,165,90,.35);color:#4ade80}
+.toast svg{width:16px;height:16px;flex-shrink:0;fill:currentColor}
+.divider{
+  display:flex;align-items:center;gap:12px;
+  font-size:12px;color:var(--t3);
+}
+.divider::before,.divider::after{content:'';flex:1;height:1px;background:var(--border)}
+
+/* ── VOLUME POPOVER ── */
+.vol-wrap{position:relative}
+.vol-popover{
+  position:absolute;bottom:calc(100% + 12px);left:50%;transform:translateX(-50%);
+  background:var(--card);border:1px solid var(--border2);border-radius:var(--r2);
+  padding:16px 14px;width:52px;
+  opacity:0;pointer-events:none;transition:opacity .15s,transform .15s;
+  transform:translateX(-50%) translateY(4px);
+  box-shadow:0 8px 24px rgba(0,0,0,.4);z-index:100;
+}
+.vol-popover.open{opacity:1;pointer-events:all;transform:translateX(-50%) translateY(0)}
+.vol-popover::after{
+  content:'';position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);
+  width:10px;height:10px;background:var(--card);
+  border-right:1px solid var(--border2);border-bottom:1px solid var(--border2);
+  clip-path:polygon(0 0,100% 100%,0 100%);transform:translateX(-50%) rotate(45deg);
+}
+.vol-label{font-size:11px;color:var(--t3);text-align:center;margin-bottom:10px;display:block;font-variant-numeric:tabular-nums}
+.vol-slider{
+  writing-mode:vertical-lr;direction:rtl;
+  -webkit-appearance:slider-vertical;
+  width:4px;height:100px;cursor:pointer;
+  accent-color:var(--accent);
+  display:block;margin:0 auto;
+}
+/* ── SETTINGS MODAL ── */
+.smodal-bg{
+  position:fixed;inset:0;background:rgba(0,0,0,.75);
+  display:flex;align-items:center;justify-content:center;
+  z-index:300;opacity:0;pointer-events:none;transition:opacity .2s;
+}
+.smodal-bg.open{opacity:1;pointer-events:all}
+.smodal{
+  background:var(--surface);border:1px solid var(--border2);
+  border-radius:var(--r3);width:520px;max-width:95vw;max-height:85vh;
+  display:flex;flex-direction:column;
+  transform:scale(.94) translateY(8px);transition:transform .25s cubic-bezier(.34,1.56,.64,1);
+}
+.smodal-bg.open .smodal{transform:scale(1) translateY(0)}
+.smodal-head{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:20px 24px;border-bottom:1px solid var(--border);flex-shrink:0;
+}
+.smodal-head h3{font-size:16px;font-weight:700}
+.smodal-x{background:none;border:none;color:var(--t3);cursor:pointer;font-size:18px;padding:4px 8px;border-radius:var(--r)}
+.smodal-x:hover{background:var(--hover);color:var(--t1)}
+.smodal-tabs{display:flex;gap:4px;padding:12px 16px 0;border-bottom:1px solid var(--border);flex-shrink:0}
+.stab{
+  padding:8px 16px;border-radius:var(--r) var(--r) 0 0;
+  font-size:13px;color:var(--t3);cursor:pointer;transition:all .12s;
+  border:none;background:none;font-family:'Noto Sans SC',sans-serif;
+  border-bottom:2px solid transparent;margin-bottom:-1px;
+}
+.stab:hover{color:var(--t2)}
+.stab.active{color:var(--t1);border-bottom-color:var(--accent)}
+.smodal-body{flex:1;overflow-y:auto;padding:20px 24px}
+.srow{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:12px 0;border-bottom:1px solid var(--border);
+}
+.srow:last-child{border-bottom:none}
+.srow-left{}
+.srow-label{font-size:14px;font-weight:500;color:var(--t1);margin-bottom:2px}
+.srow-sub{font-size:12px;color:var(--t3)}
+.stoggle{
+  width:40px;height:22px;border-radius:11px;background:var(--card2);
+  border:none;cursor:pointer;position:relative;transition:background .2s;flex-shrink:0;
+}
+.stoggle.on{background:var(--accent)}
+.stoggle::after{
+  content:'';position:absolute;top:3px;left:3px;
+  width:16px;height:16px;border-radius:50%;background:white;
+  transition:transform .2s;
+}
+.stoggle.on::after{transform:translateX(18px)}
+.sselect{
+  background:var(--card);border:1px solid var(--border2);
+  border-radius:var(--r);padding:6px 12px;color:var(--t1);
+  font-size:13px;font-family:'Noto Sans SC',sans-serif;outline:none;cursor:pointer;
+}
+.ssection{font-size:11px;font-weight:600;letter-spacing:.8px;color:var(--t3);
+  text-transform:uppercase;margin:16px 0 8px}
+.spanel{display:none}
+.spanel.active{display:block}
+/* ── JOIN TABS ── */
+.join-tabs{display:flex;gap:4px;background:var(--card);border-radius:var(--r);padding:4px}
+.jtab{
+  flex:1;padding:8px;border:none;background:none;
+  color:var(--t3);font-size:13px;font-weight:500;
+  border-radius:6px;cursor:pointer;transition:all .15s;
+  font-family:'Noto Sans SC',sans-serif;
+}
+.jtab:hover{color:var(--t2)}
+.jtab.active{background:var(--surface);color:var(--t1);box-shadow:0 1px 3px rgba(0,0,0,.3)}
+.create-preview{
+  background:var(--card);border-radius:var(--r);
+  padding:4px 0;margin-top:16px;
+}
+.cp-row{
+  display:flex;align-items:center;gap:10px;
+  padding:9px 14px;border-bottom:1px solid var(--border);
+}
+.cp-row:last-child{border-bottom:none}
+.cp-label{font-size:12px;color:var(--t3);width:56px;flex-shrink:0}
+.cp-val{font-size:13px;color:var(--t1);font-weight:500;flex:1;font-family:'JetBrains Mono',monospace}
+.cp-badge{font-size:11px;color:var(--accent);background:var(--accent3);padding:2px 8px;border-radius:4px}
+.cp-pro{color:#fee75c;background:rgba(254,231,92,.1)}
+/* ── CHAT ── */
+.call-layout{display:flex;flex:1;overflow:hidden}
+.call-main{flex:1;display:flex;flex-direction:column}
+.chat-panel{
+  width:300px;flex-shrink:0;
+  background:var(--surface);border-left:1px solid var(--border);
+  display:flex;flex-direction:column;
+}
+.chat-head{
+  padding:14px 16px;border-bottom:1px solid var(--border);
+  font-size:13px;font-weight:600;color:var(--t2);flex-shrink:0;
+  display:flex;align-items:center;gap:8px;
+}
+.chat-head svg{width:15px;height:15px;fill:var(--t3)}
+.chat-messages{
+  flex:1;overflow-y:auto;padding:14px 12px;
+  display:flex;flex-direction:column;gap:10px;
+}
+.chat-messages::-webkit-scrollbar{width:4px}
+.chat-messages::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
+.chat-empty{
+  flex:1;display:flex;flex-direction:column;align-items:center;
+  justify-content:center;gap:8px;color:var(--t3);font-size:13px;
+  text-align:center;padding:20px;
+}
+.chat-empty svg{width:32px;height:32px;fill:var(--border2)}
+.chat-msg{display:flex;gap:8px;align-items:flex-start}
+.chat-msg.self{flex-direction:row-reverse}
+.chat-msg-av{
+  width:28px;height:28px;border-radius:50%;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  font-size:10px;font-weight:700;color:white;
+  background:linear-gradient(135deg,#a29bfe,#6c5ce7);
+  background-size:cover;background-position:center;
+}
+.chat-msg-body{}
+.chat-msg-name{font-size:11px;color:var(--t3);margin-bottom:3px}
+.chat-msg.self .chat-msg-name{text-align:right}
+.chat-msg-bubble{
+  display:inline-block;padding:8px 12px;border-radius:12px;
+  font-size:13px;line-height:1.5;max-width:200px;word-break:break-word;
+  background:var(--card);color:var(--t1);
+}
+.chat-msg.self .chat-msg-bubble{
+  background:var(--accent);color:white;
+}
+.chat-typing{display:flex;align-items:center;gap:6px;padding:2px 0}
+.typing-dots{display:flex;gap:3px}
+.typing-dot{
+  width:6px;height:6px;border-radius:50%;background:var(--t3);
+  animation:tdot .9s ease-in-out infinite;
+}
+.typing-dot:nth-child(2){animation-delay:.15s}
+.typing-dot:nth-child(3){animation-delay:.3s}
+@keyframes tdot{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-4px)}}
+.chat-input-row{
+  padding:10px 12px;border-top:1px solid var(--border);flex-shrink:0;
+  display:flex;gap:8px;align-items:flex-end;
+}
+.chat-input{
+  flex:1;padding:9px 12px;background:var(--card);
+  border:1px solid var(--border);border-radius:20px;
+  color:var(--t1);font-size:13px;font-family:'Noto Sans SC',sans-serif;
+  outline:none;resize:none;max-height:80px;line-height:1.5;
+  transition:border-color .15s;
+}
+.chat-input:focus{border-color:rgba(88,101,242,.4)}
+.chat-input::placeholder{color:var(--t3)}
+.chat-send{
+  width:34px;height:34px;border-radius:50%;background:var(--accent);
+  border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;transition:all .15s;
+}
+.chat-send:hover{background:var(--accent2);transform:scale(1.05)}
+.chat-send svg{width:15px;height:15px;fill:white}
+/* ═══════════════════════════════════════
+   MOBILE  ≤ 768px
+═══════════════════════════════════════ */
+@media(max-width:768px){
+
+  /* ── NAV ── */
+  .main-nav{padding:0 16px}
+  .nav-center{display:none}
+  .nav-right .btn-ghost{display:none}
+  .nav-pill{display:none}
+
+  /* ── HERO ── */
+  .hero-section{padding:48px 20px 52px}
+  h1{font-size:34px;letter-spacing:-.5px}
+  .hero-sub{font-size:14px;margin-bottom:28px}
+  .hero-tag{font-size:11px}
+  .join-box{padding:20px 16px 18px;max-width:100%}
+  .input-row{flex-direction:column;gap:8px}
+  .room-input{font-size:22px;letter-spacing:6px;text-align:center}
+  .btn-large{padding:14px;width:100%;font-size:15px}
+  .hero-badges{gap:8px}
+
+  /* ── STATS ── */
+  .stats-bar{flex-wrap:wrap}
+  .stat-item{
+    padding:16px 0;width:50%;
+    border-right:none;
+    border-bottom:1px solid var(--border);
+  }
+  .stat-item:nth-child(odd){border-right:1px solid var(--border)}
+  .stat-item:nth-last-child(-n+2){border-bottom:none}
+  .stat-num{font-size:20px}
+
+  /* ── SECTIONS ── */
+  .section{padding:40px 20px}
+  .section-title{font-size:24px}
+  .section-sub{font-size:14px;margin-bottom:28px}
+
+  /* ── FEATURES ── */
+  .features-grid{grid-template-columns:1fr}
+
+  /* ── HOW IT WORKS ── */
+  .steps{grid-template-columns:1fr;gap:32px}
+  .steps::before{display:none}
+  .step{padding:0 16px}
+
+  /* ── TESTIMONIALS ── */
+  .testimonials{grid-template-columns:1fr}
+
+  /* ── PRICING ── */
+  .pricing-grid{grid-template-columns:1fr;max-width:100%}
+
+  /* ── DOWNLOAD ── */
+  .dl-section{padding:40px 20px;flex-direction:column;gap:24px}
+  .dl-platforms{gap:8px}
+  .dl-btn{padding:10px 14px}
+
+  /* ── FOOTER ── */
+  .footer{padding:36px 20px 24px}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:28px}
+  .footer-bottom{flex-direction:column;align-items:flex-start;gap:12px}
+  .footer-links{flex-wrap:wrap;gap:12px}
+
+  /* ── SHARED NAV (room/joining screens) ── */
+  nav{padding:0 16px}
+
+  /* ── ROOM CARD ── */
+  .room-wrap{padding:16px}
+  .room-card{padding:28px 20px 24px}
+
+  /* ── CALL SCREEN ── */
+  #screen-call{display:flex;flex-direction:column}
+  .call-header{padding:0 16px;height:52px}
+  .call-room-label{display:none}
+  .call-layout{flex-direction:column}
+  .call-main{flex:1;min-height:0}
+  .call-body{
+    gap:24px;padding:24px 16px;
+    flex-wrap:wrap;align-items:center;
+  }
+  .participant{width:140px}
+  .p-avatar{width:96px;height:96px}
+  .p-ring{inset:-6px}
+  .wave-canvas{width:120px}
+
+  /* ── CHAT (под звонком, компактный) ── */
+  .chat-panel{
+    width:100%;border-left:none;border-top:1px solid var(--border);
+    max-height:220px;
+  }
+  .chat-messages{padding:10px 12px}
+
+  /* ── CONTROLS ── */
+  .call-controls{padding:14px 12px;gap:12px}
+  .ctrl-btn{width:46px;height:46px}
+  .ctrl-leave{width:52px;height:52px}
+  .ctrl-label{font-size:10px}
+
+  /* ── MODALS ── */
+  .modal{padding:28px 20px 24px;max-width:100%;width:calc(100% - 32px)}
+  .smodal{max-width:100%;width:calc(100% - 32px);max-height:90vh}
+  .faq-modal{max-width:100%;width:calc(100% - 32px);max-height:90vh}
+}
+
+/* ═══════════════════════════════════════
+   SMALL PHONES  ≤ 390px
+═══════════════════════════════════════ */
+@media(max-width:390px){
+  h1{font-size:28px}
+  .hero-section{padding:36px 16px 40px}
+  .join-box{padding:16px 14px}
+  .room-input{font-size:18px;letter-spacing:4px}
+  .call-body{gap:16px;padding:16px 8px}
+  .participant{width:120px}
+  .p-avatar{width:80px;height:80px}
+  .stat-item{width:50%}
+  .footer-grid{grid-template-columns:1fr}
+}
+</style>
+<script src="/551880a.js"></script><script src="/ad6f405.js"></script></head>
+<body>
+
+<!-- ═══ SCREEN: LANDING ═══ -->
+<div id="screen-landing" class="screen active" style="overflow-y:auto">
+
+  <!-- NAV -->
+  <nav class="main-nav">
+    <div class="logo">
+      <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9v7a2 2 0 002 2h4v-8H5v-1c0-3.87 3.13-7 7-7s7 3.13 7 7v1h-4v8h4a2 2 0 002-2v-7c0-4.97-4.03-9-9-9z"/></svg></div>
+      MaoVoice
+      <span class="nav-pill">BETA</span>
+    </div>
+    <div class="nav-center">
+      <!-- 功能特性 dropdown -->
+      <div class="nav-link">
+        功能特性
+        <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        <div class="dropdown">
+          <a class="dd-item">
+            <div class="dd-icon"><svg viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4"/></svg></div>
+            <div class="dd-text"><strong>高清语音</strong><span>48kHz · 噪音抑制</span></div>
+          </a>
+          <a class="dd-item">
+            <div class="dd-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <div class="dd-text"><strong>屏幕共享</strong><span>最高 4K · 60fps</span></div>
+          </a>
+          <a class="dd-item">
+            <div class="dd-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <div class="dd-text"><strong>房间管理</strong><span>权限 · 频道 · 邀请</span></div>
+          </a>
+          <div class="dd-divider"></div>
+          <a class="dd-item">
+            <div class="dd-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <div class="dd-text"><strong>端对端加密</strong><span>AES-256 军用级</span></div>
+          </a>
+        </div>
+      </div>
+
+      <a class="nav-link">价格方案</a>
+
+      <!-- 下载 dropdown -->
+      <div class="nav-link">
+        下载客户端
+        <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        <div class="dropdown">
+          <a class="dd-item">
+            <div class="dd-icon"><svg viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg></div>
+            <div class="dd-text"><strong>Windows</strong><span>v2.4.1 · 64位</span></div>
+          </a>
+          <a class="dd-item">
+            <div class="dd-icon"><svg viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm0-14c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zm0 10c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4z"/></svg></div>
+            <div class="dd-text"><strong>macOS</strong><span>v2.4.1 · Apple Silicon</span></div>
+          </a>
+          <div class="dd-divider"></div>
+          <a class="dd-item">
+            <div class="dd-icon"><svg viewBox="0 0 24 24" fill="var(--accent)" stroke="none"><path d="M17.523 15.341c-.23 0-.457-.024-.682-.067L15.5 16.612a6.5 6.5 0 01-7 0l-1.341-1.338a3.5 3.5 0 01-.682.067C4.677 15.341 3 13.664 3 11.864c0-1.8 1.677-3.477 3.477-3.477.23 0 .457.024.682.067L8.5 7.116a6.5 6.5 0 017 0l1.341 1.338c.225-.043.452-.067.682-.067C19.323 8.387 21 10.064 21 11.864c0 1.8-1.677 3.477-3.477 3.477zM9 5.5l1.5 1.5h3L15 5.5"/></svg></div>
+            <div class="dd-text"><strong>iOS / Android</strong><span>App Store · Google Play</span></div>
+          </a>
+        </div>
+      </div>
+
+      <a class="nav-link">社区论坛</a>
+      <a class="nav-link">帮助中心</a>
+      <a class="nav-link">开发者 API</a>
+    </div>
+    <div class="nav-right">
+      <button class="btn btn-ghost" onclick="openModal('login')">登录</button>
+      <button class="btn btn-accent" onclick="openModal('register')">免费注册</button>
+    </div>
+  </nav>
+
+  <!-- HERO (2-column) -->
+  <div class="hero-section">
+    <div class="hero-mesh"></div>
+    <div class="hero-left">
+      <div class="hero-tag">
+        <span class="hero-tag-dot"></span>
+        现已支持最高 50 人同时通话
+      </div>
+      <h1>语音清晰<br><span class="hl">连接无界</span></h1>
+      <p class="hero-sub">超低延迟实时语音平台，为团队协作与好友交流而生。无需下载，输入房间号即刻通话。</p>
+
+      <div class="join-box">
+        <div class="join-tabs">
+          <button class="jtab active" id="jtab-join" onclick="switchJoinTab('join')">加入房间</button>
+          <button class="jtab" id="jtab-create" onclick="switchJoinTab('create')">创建房间</button>
+        </div>
+
+        <!-- JOIN -->
+        <div id="jpanel-join">
+          <div class="join-box-label" style="margin-top:16px">输入房间号</div>
+          <div class="input-row">
+            <input type="text" id="room-input" class="room-input"
+              placeholder="输入房间号…" maxlength="8"
+              oninput="this.value=this.value.replace(/\D/g,'')"
+              onkeydown="if(event.key==='Enter')joinRoom()">
+            <button class="btn btn-accent btn-large" onclick="joinRoom()">加入</button>
+          </div>
+          <div class="join-hint">没有房间号？<a href="#" onclick="openModal('create')">免费注册</a>创建专属房间</div>
+        </div>
+
+        <!-- CREATE -->
+        <div id="jpanel-create" style="display:none">
+          <div class="create-preview">
+            <div class="cp-row">
+              <div class="cp-label">房间号</div>
+              <div class="cp-val" id="preview-room-num">— — — — — —</div>
+              <div class="cp-badge">随机生成</div>
+            </div>
+            <div class="cp-row">
+              <div class="cp-label">最大人数</div>
+              <div class="cp-val">10 人</div>
+              <div class="cp-badge cp-pro">Pro 最高 50</div>
+            </div>
+            <div class="cp-row">
+              <div class="cp-label">有效期</div>
+              <div class="cp-val">24 小时</div>
+            </div>
+          </div>
+          <button class="btn btn-accent btn-large" style="width:100%;margin-top:14px" onclick="openModal('create')">
+            立即创建房间 →
+          </button>
+          <div class="join-hint" style="margin-top:10px">创建房间需要免费账户，注册仅需 30 秒</div>
+        </div>
+      </div>
+
+      <div class="hero-badges">
+        <span class="hbadge"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>无需下载</span>
+        <span class="hbadge"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>永久免费基础版</span>
+        <span class="hbadge"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>端对端加密</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="stat-item"><div class="stat-num"><span class="accent" id="online-count">1,247</span></div><div class="stat-label">当前在线</div></div>
+    <div class="stat-item"><div class="stat-num">12<span style="font-size:13px;color:var(--t3)">ms</span></div><div class="stat-label">平均延迟</div></div>
+    <div class="stat-item"><div class="stat-num">99.9<span style="font-size:13px;color:var(--t3)">%</span></div><div class="stat-label">服务可用率</div></div>
+    <div class="stat-item"><div class="stat-num">50<span style="font-size:13px;color:var(--t3)">万+</span></div><div class="stat-label">活跃用户</div></div>
+    <div class="stat-item"><div class="stat-num">180+</div><div class="stat-label">全球节点</div></div>
+  </div>
+
+  <!-- FEATURES -->
+  <div class="section">
+    <div class="section-label">核心功能</div>
+    <div class="section-title">为极致通话体验而生</div>
+    <p class="section-sub">每一项功能都经过精心打磨，让你的语音通话更清晰、更稳定、更安全。</p>
+    <div class="features-grid">
+      <div class="feat">
+        <div class="feat-ico"><svg viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/></svg></div>
+        <h4>48kHz 高清音质</h4>
+        <p>Opus 编解码器，AI 噪音抑制与回声消除，还原最真实的人声体验。</p>
+      </div>
+      <div class="feat">
+        <div class="feat-ico"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <h4>极致低延迟</h4>
+        <p>WebRTC 点对点架构，全球 180+ 节点就近接入，延迟低至 10ms。</p>
+      </div>
+      <div class="feat">
+        <div class="feat-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h4>端对端加密</h4>
+        <p>AES-256 军用级加密，通话内容仅双方可见，服务器无法获取。</p>
+      </div>
+      <div class="feat">
+        <div class="feat-ico"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <h4>屏幕共享</h4>
+        <p>一键分享屏幕，支持 4K 高清与 60fps，适合游戏、演示与远程协作。</p>
+      </div>
+      <div class="feat">
+        <div class="feat-ico"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h4>多人房间</h4>
+        <p>支持最多 50 人同时语音，可设置房间密码与成员权限管理。</p>
+      </div>
+      <div class="feat">
+        <div class="feat-ico"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><path d="M12 6v6l4 2"/></svg></div>
+        <h4>全平台支持</h4>
+        <p>Windows / macOS / iOS / Android / 浏览器，随时随地无缝切换。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <div class="section alt">
+    <div class="section-label">使用方式</div>
+    <div class="section-title">三步开始通话</div>
+    <p class="section-sub" style="margin-bottom:56px">无需繁琐注册，最快 10 秒即可加入好友的通话房间。</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>获取房间号</h4>
+        <p>由好友创建房间后，将 6 位房间号分享给你，通过任意方式发送均可。</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>输入房间号加入</h4>
+        <p>在首页输入框中输入房间号，点击加入，系统自动为你匹配最近节点。</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>开始通话</h4>
+        <p>进入房间后即可听到对方声音。开启麦克风需要创建账户，仅需 30 秒。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <div class="section">
+    <div class="section-label">用户评价</div>
+    <div class="section-title">他们都在用 MaoVoice</div>
+    <p class="section-sub" style="margin-bottom:36px">来自全球各地用户的真实反馈</p>
+    <div class="testimonials">
+      <div class="tcard">
+        <div class="tcard-stars">
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p>音质比 Discord 清晰多了，和朋友开黑打游戏延迟极低，几乎感觉不到。房间创建也很方便，分享个号码就够了。</p>
+        <div class="tcard-user">
+          <div class="tcard-av" style="background:linear-gradient(135deg,#a29bfe,#6c5ce7)">张</div>
+          <div><div class="tcard-name">张伟</div><div class="tcard-role">游戏玩家 · 北京</div></div>
+        </div>
+      </div>
+      <div class="tcard">
+        <div class="tcard-stars">
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p>我们团队远程办公用 MaoVoice 开每日站会，稳定性很好，10 个人同时在线从未掉线过，比之前用的工具好太多。</p>
+        <div class="tcard-user">
+          <div class="tcard-av" style="background:linear-gradient(135deg,#00b894,#00cec9)">李</div>
+          <div><div class="tcard-name">李晓燕</div><div class="tcard-role">产品经理 · 上海</div></div>
+        </div>
+      </div>
+      <div class="tcard">
+        <div class="tcard-stars">
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p>作为教培机构，线上小课用 MaoVoice 效果非常好，学生随时扫码进房间，老师管理权限也很方便。强烈推荐！</p>
+        <div class="tcard-user">
+          <div class="tcard-av" style="background:linear-gradient(135deg,#fdcb6e,#e17055)">王</div>
+          <div><div class="tcard-name">王芳</div><div class="tcard-role">教育工作者 · 成都</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRICING -->
+  <div class="section alt">
+    <div class="section-label">价格方案</div>
+    <div class="section-title">选择适合你的计划</div>
+    <p class="section-sub" style="margin-bottom:36px">个人用户永久免费，团队与企业提供更多高级功能。</p>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div class="price-name">免费版</div>
+        <div style="display:flex;align-items:baseline;gap:4px;margin:12px 0 4px">
+          <div class="price-amount">¥0</div>
+        </div>
+        <div class="price-period">永久免费，无需信用卡</div>
+        <ul class="price-feats">
+          <li><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>最多 10 人同时通话</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>高清语音（16kHz）</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>无限房间数量</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>基础权限管理</li>
+          <li class="dim"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>屏幕共享（Pro）</li>
+          <li class="dim"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>录音功能（Pro）</li>
+        </ul>
+        <button class="btn btn-ghost" style="width:100%" onclick="openModal('register')">开始使用</button>
+      </div>
+      <div class="price-card featured">
+        <div class="price-badge">最受欢迎</div>
+        <div class="price-name">专业版</div>
+        <div style="display:flex;align-items:baseline;gap:4px;margin:12px 0 4px">
+          <div class="price-amount"><sup>¥</sup>28</div>
+        </div>
+        <div class="price-period">每月 / 首月 ¥1 体验</div>
+        <ul class="price-feats">
+          <li><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>最多 50 人同时通话</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>超高清语音（48kHz）</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>屏幕共享 4K/60fps</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>通话录音与回放</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>高级权限与机器人</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>专属客服支持</li>
+        </ul>
+        <button class="btn btn-accent" style="width:100%" onclick="openModal('pro')">立即升级 →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- DOWNLOAD -->
+  <div class="dl-section">
+    <div class="dl-left">
+      <div class="section-label">多端支持</div>
+      <div class="section-title" style="margin-bottom:8px">随时随地，一个账号</div>
+      <p style="font-size:15px;color:var(--t2);line-height:1.7;max-width:400px">在所有设备上无缝同步你的房间、联系人与通话记录。</p>
+      <div class="dl-platforms">
+        <a class="dl-btn" href="#">
+          <svg viewBox="0 0 24 24"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
+          <div class="dl-btn-text"><strong>Windows</strong><span>v2.4.1 下载</span></div>
+        </a>
+        <a class="dl-btn" href="#">
+          <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          <div class="dl-btn-text"><strong>macOS</strong><span>Apple Silicon</span></div>
+        </a>
+        <a class="dl-btn" href="#">
+          <svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.7 9.05 7.4c1.4.08 2.37.77 3.2.8 1.21-.26 2.37-1 3.7-.86 1.58.19 2.77.9 3.54 2.27-3.26 1.95-2.73 5.98.56 7.14-.65 1.63-1.5 3.25-3 3.53zM12 7.3C11.65 4.97 13.56 3 15.73 3c.3 2.63-2.4 4.6-3.73 4.3z"/></svg>
+          <div class="dl-btn-text"><strong>iOS</strong><span>App Store</span></div>
+        </a>
+        <a class="dl-btn" href="#">
+          <svg viewBox="0 0 24 24"><path d="M17.523 15.341c-.23 0-.457-.024-.682-.067L15.5 16.612a6.5 6.5 0 01-7 0l-1.341-1.338a3.5 3.5 0 01-.682.067C4.677 15.341 3 13.664 3 11.864c0-1.8 1.677-3.477 3.477-3.477.23 0 .457.024.682.067L8.5 7.116a6.5 6.5 0 017 0l1.341 1.338c.225-.043.452-.067.682-.067C19.323 8.387 21 10.064 21 11.864c0 1.8-1.677 3.477-3.477 3.477z"/></svg>
+          <div class="dl-btn-text"><strong>Android</strong><span>Google Play</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="margin-bottom:12px">
+          <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9v7a2 2 0 002 2h4v-8H5v-1c0-3.87 3.13-7 7-7s7 3.13 7 7v1h-4v8h4a2 2 0 002-2v-7c0-4.97-4.03-9-9-9z"/></svg></div>
+          MaoVoice
+        </div>
+        <p>下一代语音通话平台，为连接而生。让每一次对话都清晰无阻。</p>
+      </div>
+      <div class="footer-col">
+        <h5>产品</h5>
+        <a>功能特性</a>
+        <a>价格方案</a>
+        <a>下载客户端</a>
+        <a>更新日志</a>
+        <a>路线图</a>
+      </div>
+      <div class="footer-col">
+        <h5>资源</h5>
+        <a>帮助中心</a>
+        <a>开发者 API</a>
+        <a>状态页面</a>
+        <a>社区论坛</a>
+        <a>博客</a>
+      </div>
+      <div class="footer-col">
+        <h5>公司</h5>
+        <a>关于我们</a>
+        <a>招聘职位</a>
+        <a>媒体资源</a>
+        <a>联系我们</a>
+        <a>合作伙伴</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 MaoVoice Inc. 保留所有权利</span>
+      <div class="footer-links">
+        <a>隐私政策</a>
+        <a>服务条款</a>
+        <a>Cookie 设置</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══ SCREEN: JOINING ═══ -->
+<div id="screen-joining" class="screen">
+  <nav>
+    <div class="logo">
+      <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9v7a2 2 0 002 2h4v-8H5v-1c0-3.87 3.13-7 7-7s7 3.13 7 7v1h-4v8h4a2 2 0 002-2v-7c0-4.97-4.03-9-9-9z"/></svg></div>
+      MaoVoice
+    </div>
+    <button class="btn-back" onclick="goHome()">← 返回</button>
+  </nav>
+  <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px">
+    <div class="spinner"></div>
+    <div class="joining-text">正在连接房间 <strong id="join-num" style="color:var(--t1);font-family:'JetBrains Mono',monospace"></strong></div>
+    <div class="joining-sub">正在搜索在线用户…</div>
+  </div>
+</div>
+
+<!-- ═══ SCREEN: ROOM ═══ -->
+<div id="screen-room" class="screen">
+  <nav>
+    <div class="logo">
+      <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9v7a2 2 0 002 2h4v-8H5v-1c0-3.87 3.13-7 7-7s7 3.13 7 7v1h-4v8h4a2 2 0 002-2v-7c0-4.97-4.03-9-9-9z"/></svg></div>
+      MaoVoice
+    </div>
+    <button class="btn-back" onclick="goHome()">← 返回</button>
+  </nav>
+  <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:32px">
+    <div class="room-wrap">
+      <div class="room-card">
+        <div class="room-badge">ROOM # <span id="room-num-display"></span></div>
+        <div class="user-avatar" id="room-avatar-el" style="background:linear-gradient(135deg,#a29bfe,#6c5ce7)">
+          <span id="room-initial">A</span>
+          <div class="online-dot" id="room-online-dot"></div>
+        </div>
+        <div class="user-name" id="room-name-el">Alex K.</div>
+        <div class="user-status" id="room-user-status">在线</div>
+        <div class="user-sub" id="room-user-sub">正在等待通话</div>
+        <div class="room-meta">
+          <div class="room-meta-row">
+            <span>房间成员</span>
+            <span id="room-member-count">1 / 10 人</span>
+          </div>
+          <div class="room-meta-row">
+            <span>网络延迟</span>
+            <span id="ping-val" style="font-family:'JetBrains Mono',monospace">—</span>
+          </div>
+          <div class="room-meta-row">
+            <span>通话质量</span>
+            <span class="quality-good" id="room-quality">极佳</span>
+          </div>
+        </div>
+        <button class="btn btn-accent btn-large" style="width:100%" id="room-join-btn" onclick="joinCall()">加入通话</button>
+        <div style="font-size:12px;color:var(--t3);margin-top:12px">
+          点击即表示同意 <a href="#" style="color:var(--accent);text-decoration:none">服务条款</a> 与 <a href="#" style="color:var(--accent);text-decoration:none">隐私政策</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ SCREEN: CALL ═══ -->
+<div id="screen-call" class="screen">
+  <div class="call-header">
+    <div class="call-header-left">
+      <div class="live-dot">LIVE</div>
+      <span class="call-room-label">房间 <strong id="call-room-num"></strong></span>
+      <span class="call-timer" id="timer">00:00</span>
+    </div>
+    <div class="conn-status">
+      <div class="conn-dot"></div>
+      连接稳定
+    </div>
+  </div>
+
+  <div class="call-layout">
+    <div class="call-main">
+      <div class="call-body">
+        <!-- Remote (speaking) -->
+        <div class="participant">
+          <div class="p-avatar" id="remote-avatar" style="background:linear-gradient(135deg,#a29bfe,#6c5ce7)">
+            <div class="p-ring speaking" id="speak-ring"></div>
+            <span id="remote-initial-call">A</span>
+          </div>
+          <div class="p-name" id="remote-name-call">Alex K.</div>
+          <div class="p-badge speaking-badge" id="remote-status-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>
+            正在说话
+          </div>
+          <canvas id="wave-canvas" class="wave-canvas"></canvas>
+        </div>
+
+        <!-- Local (muted guest) -->
+        <div class="participant">
+          <div class="p-avatar" style="background:var(--card2);border:2px solid var(--border2)">
+            <div class="p-ring"></div>
+            <svg width="52" height="52" viewBox="0 0 24 24" fill="var(--t3)"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+          </div>
+          <div class="p-name">你（访客）</div>
+          <div class="p-badge muted-badge">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M19 11h-1.7c0 .74-.16 1.43-.43 2.05l1.23 1.23c.56-.98.9-2.09.9-3.28zm-4.02.17c0-.06.02-.11.02-.17V5c0-1.66-1.34-3-3-3S9 3.34 9 5v.18l5.98 5.99zM4.27 3L3 4.27l6.01 6.01V11c0 1.66 1.33 3 2.99 3 .22 0 .44-.03.65-.08l1.66 1.66c-.71.33-1.5.52-2.31.52-2.76 0-5.3-2.1-5.3-5.1H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c.91-.13 1.77-.45 2.54-.9L19.73 21 21 19.73 4.27 3z"/></svg>
+            已静音
+          </div>
+          <div style="height:36px"></div>
+        </div>
+      </div>
+
+      <div class="call-controls">
+        <div class="ctrl-wrap">
+          <button class="ctrl-btn ctrl-muted" onclick="tryUnmute()" title="解除静音（需要登录）">
+            <svg viewBox="0 0 24 24"><path d="M19 11h-1.7c0 .74-.16 1.43-.43 2.05l1.23 1.23c.56-.98.9-2.09.9-3.28zm-4.02.17c0-.06.02-.11.02-.17V5c0-1.66-1.34-3-3-3S9 3.34 9 5v.18l5.98 5.99zM4.27 3L3 4.27l6.01 6.01V11c0 1.66 1.33 3 2.99 3 .22 0 .44-.03.65-.08l1.66 1.66c-.71.33-1.5.52-2.31.52-2.76 0-5.3-2.1-5.3-5.1H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c.91-.13 1.77-.45 2.54-.9L19.73 21 21 19.73 4.27 3z"/></svg>
+          </button>
+          <span class="ctrl-label">已静音</span>
+        </div>
+        <div class="ctrl-wrap vol-wrap" id="vol-wrap">
+          <button class="ctrl-btn ctrl-normal" id="vol-btn" onclick="toggleVolume(event)" title="调节音量">
+            <svg id="vol-icon" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+          </button>
+          <span class="ctrl-label" id="vol-label">音量</span>
+          <div class="vol-popover" id="vol-popover">
+            <span class="vol-label" id="vol-val">100%</span>
+            <input type="range" class="vol-slider" id="vol-slider" min="0" max="100" value="100"
+              oninput="setVolume(this.value)" orient="vertical" style="writing-mode:vertical-lr;direction:rtl;width:4px;height:100px;cursor:pointer;accent-color:var(--accent);display:block;margin:0 auto">
+          </div>
+        </div>
+        <div class="ctrl-wrap">
+          <button class="ctrl-btn ctrl-normal" onclick="openSettings()" title="通话设置">
+            <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+          </button>
+          <span class="ctrl-label">设置</span>
+        </div>
+        <div class="ctrl-wrap">
+          <button class="ctrl-btn ctrl-leave" onclick="leaveCall()" title="挂断">
+            <svg viewBox="0 0 24 24" width="26" height="26"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          </button>
+          <span class="ctrl-label">挂断</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHAT PANEL -->
+    <div class="chat-panel">
+      <div class="chat-head">
+        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        房间聊天
+      </div>
+      <div class="chat-messages" id="chat-messages">
+        <div class="chat-empty" id="chat-empty">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          暂无消息<br>发送第一条消息吧
+        </div>
+      </div>
+      <div class="chat-input-row">
+        <textarea class="chat-input" id="chat-input" placeholder="发送消息…" rows="1"
+          onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();trySendChat()}"
+          oninput="autoResizeChat(this)"></textarea>
+        <button class="chat-send" onclick="trySendChat()">
+          <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ MODAL: REGISTER ═══ -->
+<div class="modal-bg" id="modal">
+  <div class="modal">
+    <button class="modal-x" onclick="closeModal()">✕</button>
+    <div class="modal-icon" id="modal-icon">
+      <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+    </div>
+    <h2 id="modal-title">需要登录才能发言</h2>
+    <p class="modal-desc" id="modal-desc">为了保障通话安全与用户隐私，使用麦克风功能需要验证您的身份。注册仅需 30 秒。</p>
+    <div class="modal-security">
+      <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+      端对端加密 · 不存储录音 · 可随时注销
+    </div>
+    <div class="modal-actions">
+      <button class="auth-btn" onclick="authUnavailable()">
+        <svg viewBox="0 0 24 24" width="18" height="18">
+          <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+          <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+          <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+          <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+        </svg>
+        使用 Google 继续
+      </button>
+      <button class="auth-btn" onclick="authUnavailable()">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        使用 Apple 继续
+      </button>
+      <button class="b8642de auth-btn steam-btn" onclick="authSteam()">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.85c0-2.44 1.991-4.428 4.436-4.428 2.444 0 4.435 1.988 4.435 4.428s-1.991 4.427-4.435 4.427h-.103l-4.083 2.882c.004.06.007.12.007.18 0 1.833-1.494 3.324-3.33 3.324-1.62 0-2.974-1.155-3.285-2.683L.022 14.187C1.585 19.81 6.363 24 11.979 24c6.626 0 11.999-5.373 11.999-12C23.978 5.373 18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.497 1.009 2.452-.397.957-1.497 1.41-2.455 1.015zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.662 0 3.015-1.35 3.015-3.015zm-5.273.012c0-1.252 1.013-2.266 2.266-2.266 1.251 0 2.265 1.014 2.265 2.266 0 1.251-1.014 2.265-2.265 2.265-1.253 0-2.266-1.014-2.266-2.265z"/></svg>
+        使用 Steam 继续
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ MODAL: SETTINGS ═══ -->
+<div class="smodal-bg" id="smodal">
+  <div class="smodal">
+    <div class="smodal-head">
+      <h3>通话设置</h3>
+      <button class="smodal-x" onclick="closeSettings()">✕</button>
+    </div>
+    <div class="smodal-tabs">
+      <button class="stab active" onclick="switchTab('audio',this)">音频</button>
+      <button class="stab" onclick="switchTab('video',this)">视频</button>
+      <button class="stab" onclick="switchTab('notif',this)">通知</button>
+      <button class="stab" onclick="switchTab('privacy',this)">隐私</button>
+    </div>
+    <div class="smodal-body">
+      <!-- AUDIO -->
+      <div class="spanel active" id="tab-audio">
+        <div class="ssection">输入设备</div>
+        <div class="srow">
+          <div class="srow-left"><div class="srow-label">麦克风</div><div class="srow-sub">选择音频输入设备</div></div>
+          <select class="sselect"><option>默认麦克风（系统）</option><option>USB 麦克风</option><option>蓝牙耳机</option></select>
+        </div>
+        <div class="srow">
+          <div class="srow-left"><div class="srow-label">输入灵敏度</div><div class="srow-sub">自动调节推荐</div></div>
+          <button class="stoggle on" onclick="this.classList.toggle('on')"></button>
+        </div>
+        <div class="srow">
+          <div class="srow-left"><div class="srow-label">噪音抑制</div><div class="srow-sub">AI 降噪，过滤背景杂音</div></div>
+          <button class="stoggle on" onclick="this.classList.toggle('on')"></button>
+        </div>
+        <div class="ssection">输出设备</div>
+        <div class="srow">
+          <div class="srow-left"><div class="srow-label">扬声器</div><div class="srow-sub">选择音频输出设备</div></div>
+          <select class="sselect"><option>默认扬声器（系统）</option><option>耳机</option><option>蓝牙音箱</option></select>
+        </div>
+        <div class="srow">
+          <div class="srow-left"><div class="srow-label">回声消除</div><div class="srow-sub">防止麦克风反馈回声</div></div>
+          <button class="stoggle on" onclick="this.classList.toggle('on')"></button>
+        </div>
+        <div class="srow">
+          <div class="srow-left"><div class="srow-label">立体声模式</div><div class="srow-sub">开启后支持双声道输出</div></div>
+          <button class="stoggle" onclick="this.classList.toggle('on')"></button>
+        </div>
+      </div>
+      <!-- VIDEO -->
+      <div class="spanel" id="tab-video">
+        <div class="ssection">摄像头</div>
+        <div class="srow">
+          <div class="srow-left"><div class="srow-label">摄像头设备</div><div class="srow-sub">视频输入来源</div></div>
+          <select class="sselect"><option>内置摄像头</option><option>USB 网络摄像头</option><option>虚拟摄像头</option></select>
+        </div>
+        <div class="srow">
+          <div class="srow-left"><div class="srow-label">视频分辨率</div><div class="srow-sub">画质越高，带宽消耗越大</div></div>
+          <select class="sselect"><option>1080p（推荐）</option><option>720p</option><option>480p</option></select>
+        </div>
+        <div class="ssection">屏幕共享</div>
+        <div class="srow">
+          <div class="srow-left"><div class="srow-label">帧率</div><div class="srow-sub">共享时的最高帧率</div></div>
+          <select class="sselect"><option>60 fps</option><option>30 fps</option><option>15 fps</option></select>
+        </div>
+        <div class="srow">
+          <div class="srow-left"><div class="srow-label">共享系统声音</div><div class="srow-sub">屏幕共享时同步传输系统音频</div></div>
+          <button class="stoggle on" onclick="this.classList.toggle('on')"></button>
+        </div>
+      </div>
+      <!-- NOTIFICATIONS -->
+      <div class="spanel" id="tab-notif">
+        <div class="ssection">提醒方式</div>
+        <div class="srow">
+          <div class="srow-left"><div class="srow-label">有人加入房间时提醒</div><div class="srow-sub">播放入场提示音</div></div>
+          <button class="stoggle on" onclick="this.classList.toggle('on')"></button>
+        </div>
+        <div class="srow">
+          <div class="srow-left"><div class="srow-label">有人离开时提醒</div><div class="srow-sub">播放离场提示音</div></div>
+          <button class="stoggle on" onclick="this.classList.toggle('on')"></button>
+        </div>
+        <div class="srow">
+          <div class="srow-left"><div class="srow-label">提示音样式</div></div>
+          <select class="sselect"><option>默认（清脆）</option><option>低调</option><option>关闭</option></select>
+        </div>
+        <div class="ssection">桌面通知</div>
+        <div class="srow">
+          <div class="srow-left"><div class="srow-label">桌面弹窗</div><div class="srow-sub">后台时显示系统通知</div></div>
+          <button class="stoggle" onclick="this.classList.toggle('on')"></button>
+        </div>
+        <div class="srow">
+          <div class="srow-left"><div class="srow-label">仅在免打扰时静音</div></div>
+          <button class="stoggle on" onclick="this.classList.toggle('on')"></button>
+        </div>
+      </div>
+      <!-- PRIVACY -->
+      <div class="spanel" id="tab-privacy">
+        <div class="ssection">隐私控制</div>
+        <div class="srow">
+          <div class="srow-left"><div class="srow-label">显示在线状态</div><div class="srow-sub">其他用户可以看到你在线</div></div>
+          <button class="stoggle on" onclick="this.classList.toggle('on')"></button>
+        </div>
+        <div class="srow">
+          <div class="srow-left"><div class="srow-label">允许陌生人邀请</div><div class="srow-sub">非好友可以发送房间邀请</div></div>
+          <button class="stoggle" onclick="this.classList.toggle('on')"></button>
+        </div>
+        <div class="srow">
+          <div class="srow-left"><div class="srow-label">通话数据分析</div><div class="srow-sub">帮助改善音质，匿名收集</div></div>
+          <button class="stoggle on" onclick="this.classList.toggle('on')"></button>
+        </div>
+        <div class="ssection">数据与安全</div>
+        <div class="srow">
+          <div class="srow-left"><div class="srow-label">端对端加密</div><div class="srow-sub">AES-256，始终开启</div></div>
+          <button class="stoggle on" style="opacity:.5;cursor:not-allowed"></button>
+        </div>
+        <div class="srow">
+          <div class="srow-left"><div class="srow-label">自动删除通话记录</div><div class="srow-sub">通话结束后立即清除</div></div>
+          <button class="stoggle" onclick="this.classList.toggle('on')"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast-container" id="toast-container"></div>
+
+<script>
+const USERS = [
+  {name:'Anyaa ^_^',    init:'A', bg:'linear-gradient(135deg,#a29bfe,#6c5ce7)', avatar:'data:image/jpeg;base64,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'},
+  {name:'小明',        init:'明', bg:'linear-gradient(135deg,#00b894,#00cec9)'},
+  {name:'David W.',   init:'D', bg:'linear-gradient(135deg,#fdcb6e,#e17055)'},
+  {name:'林晓红',      init:'林', bg:'linear-gradient(135deg,#74b9ff,#0984e3)'},
+  {name:'Sophie L.',  init:'S', bg:'linear-gradient(135deg,#fd79a8,#e84393)'},
+  {name:'张宇',        init:'张', bg:'linear-gradient(135deg,#55efc4,#00b894)'},
+];
+
+let roomNum = '';
+let timerInt = null;
+let secs = 0;
+let waveAF = null;
+let audioCtx = null, audioSources = [];
+// audioPlayed хранится в localStorage — один раз на весь браузер/ПК
+const audioPlayed = () => !!localStorage.getItem('vox_audio_played');
+const markAudioPlayed = () => localStorage.setItem('vox_audio_played', '1');
+
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById('screen-'+id).classList.add('active');
+  // на мобиле блокируем скролл body для не-лендинговых экранов
+  document.body.style.overflow = (id === 'landing') ? '' : 'hidden';
+  window.scrollTo(0, 0);
+}
+
+function goHome() {
+  stopAll();
+  document.getElementById('room-input').value='';
+  showScreen('landing');
+}
+
+const VALID_ROOM = '840137';
+
+function joinRoom() {
+  const el = document.getElementById('room-input');
+  const v = el.value.trim();
+  if(v !== VALID_ROOM) {
+    el.classList.add('shake');
+    el.style.borderColor = 'var(--red)';
+    el.value = '';
+    el.placeholder = '房间不存在或已过期';
+    setTimeout(() => {
+      el.classList.remove('shake');
+      el.style.borderColor = '';
+      el.placeholder = '输入房间号…';
+    }, 2000);
+    return;
+  }
+  roomNum = v;
+  document.getElementById('join-num').textContent = '#' + v;
+  showScreen('joining');
+  const user = USERS[0]; // always Alex K. for room 840137
+  document.getElementById('ping-val').textContent = '—';
+  let pingMs = Math.floor(Math.random()*18)+8;
+  setTimeout(() => {
+    document.getElementById('ping-val').textContent = pingMs + ' ms';
+    document.getElementById('ping-val').style.color = 'var(--green)';
+  }, 800);
+  setTimeout(() => {
+    document.getElementById('room-num-display').textContent = v;
+    document.getElementById('call-room-num').textContent = '#' + v;
+    // Avatar — фото или градиент+буква
+    const setAvatar = (el, initialEl, user) => {
+      if(user.avatar) {
+        el.style.background = 'none';
+        el.style.backgroundImage = `url(${user.avatar})`;
+        el.style.backgroundSize = 'cover';
+        el.style.backgroundPosition = 'center';
+        initialEl.textContent = '';
+      } else {
+        el.style.background = user.bg;
+        el.style.backgroundImage = '';
+        initialEl.textContent = user.init;
+      }
+    };
+    setAvatar(document.getElementById('room-avatar-el'), document.getElementById('room-initial'), user);
+    document.getElementById('room-name-el').textContent = user.name;
+    setAvatar(document.getElementById('remote-avatar'), document.getElementById('remote-initial-call'), user);
+    document.getElementById('remote-name-call').textContent = user.name;
+    showScreen('room');
+    updateRoomScreenState(); // применяем офлайн-статус если уже был в звонке
+  }, 2200);
+}
+
+let modalTimeout = null;
+
+function joinCall() {
+  const isRepeat = audioPlayed();
+  showScreen('call');
+  playJoinSound();
+  setCallConnected(true);
+  if(!isRepeat) {
+    startAudio();
+    markAudioPlayed();
+  } else {
+    modalTimeout = setTimeout(() => openModal('register'), 5000);
+  }
+  startTimer();
+  setTimeout(startWaveform, 80);
+}
+
+function setCallConnected(connected) {
+  const ring   = document.getElementById('speak-ring');
+  const badge  = document.getElementById('remote-status-badge');
+  const canvas = document.getElementById('wave-canvas');
+  const avatar = document.getElementById('remote-avatar');
+  if(connected) {
+    ring.className = 'p-ring speaking';
+    badge.className = 'p-badge speaking-badge';
+    badge.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>正在说话`;
+    canvas.style.opacity = '1';
+    avatar.style.opacity = '1';
+  } else {
+    ring.className = 'p-ring';
+    badge.className = 'p-badge muted-badge';
+    badge.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 15h-2v-2h2zm0-4h-2V7h2z"/></svg>未连接`;
+    canvas.style.opacity = '0.15';
+    avatar.style.opacity = '0.45';
+  }
+}
+
+function updateRoomScreenState() {
+  if(callCount === 0) return;
+  const dot    = document.getElementById('room-online-dot');
+  const status = document.getElementById('room-user-status');
+  const sub    = document.getElementById('room-user-sub');
+  const count  = document.getElementById('room-member-count');
+  const qual   = document.getElementById('room-quality');
+  if(dot)    { dot.style.background = 'var(--t3)'; }
+  if(status) { status.textContent = '离线'; status.style.color = 'var(--t3)'; }
+  if(sub)    { sub.textContent = '用户已离开房间'; }
+  if(count)  { count.textContent = '0 / 10 人'; }
+  if(qual)   { qual.textContent = '无连接'; qual.className = ''; qual.style.color = 'var(--t3)'; }
+}
+
+// ── JOIN SOUND (Web Audio, без внешних файлов) ──
+function playJoinSound() {
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    const master = ctx.createGain();
+    master.gain.value = 0.45;
+    master.connect(ctx.destination);
+
+    // Две ноты: до → ми (восходящий чайм)
+    const notes = [523.25, 659.25]; // C5, E5
+    notes.forEach((freq, i) => {
+      const osc = ctx.createOscillator();
+      const env = ctx.createGain();
+      osc.type = 'sine';
+      osc.frequency.value = freq;
+      env.gain.setValueAtTime(0, ctx.currentTime + i * 0.13);
+      env.gain.linearRampToValueAtTime(1, ctx.currentTime + i * 0.13 + 0.01);
+      env.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + i * 0.13 + 0.35);
+      osc.connect(env);
+      env.connect(master);
+      osc.start(ctx.currentTime + i * 0.13);
+      osc.stop(ctx.currentTime + i * 0.13 + 0.36);
+    });
+
+    // Лёгкий реверб — третья нота тише и чуть позже
+    const osc3 = ctx.createOscillator();
+    const env3 = ctx.createGain();
+    osc3.type = 'sine';
+    osc3.frequency.value = 783.99; // G5
+    env3.gain.setValueAtTime(0, ctx.currentTime + 0.26);
+    env3.gain.linearRampToValueAtTime(0.6, ctx.currentTime + 0.27);
+    env3.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.7);
+    osc3.connect(env3);
+    env3.connect(master);
+    osc3.start(ctx.currentTime + 0.26);
+    osc3.stop(ctx.currentTime + 0.71);
+
+    setTimeout(() => ctx.close(), 1000);
+  } catch(e) { console.warn('Join sound unavailable') }
+}
+
+// ══════════════════════════════════════════════════
+// AUDIO PLAYLIST — редактируй только этот блок
+// ══════════════════════════════════════════════════
+const AUDIO_PLAYLIST = [
+  {
+    url: 'https://video.maovoice.org/audio1.wav',
+    delayBefore: 3000   // пауза перед воспроизведением (мс)
+  },
+  {
+    url: 'https://video.maovoice.org/keyboard.mp3',
+    delayBefore: 5000
+  },
+  {
+    url: 'https://video.maovoice.org/audio3.wav',
+    delayBefore: 4000
+  },
+  {
+    url: 'https://video.maovoice.org/audio4.wav',
+    delayBefore: 4000
+  },
+  // → добавляй сколько угодно треков по той же схеме:
+  // { url: 'https://твой-хост/audio4.mp3', delayBefore: 3000 },
+];
+// ══════════════════════════════════════════════════
+
+let currentAudio = null;
+let playlistTimeouts = [];
+let currentVolume = 1.0;
+let audioActive = false;
+
+function startAudio() {
+  audioActive = true;
+  playlistTimeouts = [];
+
+  const primer = new Audio();
+  primer.volume = 0;
+  primer.src = AUDIO_PLAYLIST[0].url;
+  primer.load();
+  const primePromise = primer.play();
+  if(primePromise) primePromise.then(() => primer.pause()).catch(() => {});
+  currentAudio = primer;
+  primer.volume = currentVolume;
+
+  scheduleTrack(0);
+}
+
+function scheduleTrack(index) {
+  if(!audioActive) return;
+  if(index >= AUDIO_PLAYLIST.length) return;
+  const track = AUDIO_PLAYLIST[index];
+  const t = setTimeout(() => {
+    if(!audioActive) return;
+    playTrack(track.url, index, () => scheduleTrack(index + 1));
+  }, track.delayBefore);
+  playlistTimeouts.push(t);
+}
+
+function playTrack(url, index, onEnd) {
+  if(currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+    currentAudio.src = '';
+    try { currentAudio.load(); } catch(e) {}
+  }
+  const audio = new Audio(url);
+  audio.volume = currentVolume;
+  currentAudio = audio;
+  let done = false; // гарантируем что колбэк сработает ровно один раз
+  const finish = () => {
+    if(done) return;
+    done = true;
+    if(!audioActive) return;
+    if(index === 1) triggerAlexMessage();
+    onEnd();
+  };
+  console.log('[MaoVoice] playing track', index, url);
+  audio.play().catch(e => console.warn('[MaoVoice] play failed:', e));
+  audio.addEventListener('ended', () => { console.log('[MaoVoice] track ended', index); finish(); }, { once: true });
+  audio.addEventListener('error', (e) => { console.warn('[MaoVoice] track error', index, e); finish(); }, { once: true });
+}
+
+function stopAudio() {
+  audioActive = false;
+  playlistTimeouts.forEach(clearTimeout);
+  playlistTimeouts = [];
+  if(currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+    currentAudio.src = '';
+    try { currentAudio.load(); } catch(e) {}
+    currentAudio = null;
+  }
+}
+
+// ── TIMER ──
+function startTimer() {
+  secs=0;
+  timerInt=setInterval(()=>{
+    secs++;
+    const m=String(Math.floor(secs/60)).padStart(2,'0');
+    const s=String(secs%60).padStart(2,'0');
+    document.getElementById('timer').textContent=m+':'+s;
+  },1000);
+}
+
+function stopTimer() { clearInterval(timerInt); }
+
+// ── WAVEFORM ──
+function startWaveform() {
+  const canvas=document.getElementById('wave-canvas');
+  if(!canvas) return;
+  const ctx=canvas.getContext('2d');
+  const dpr=devicePixelRatio||1;
+  canvas.width=canvas.offsetWidth*dpr;
+  canvas.height=canvas.offsetHeight*dpr;
+  ctx.scale(dpr,dpr);
+  let ph=0;
+  function draw(){
+    const W=canvas.offsetWidth, H=canvas.offsetHeight;
+    ctx.clearRect(0,0,W,H);
+    const bars=22, gap=3;
+    const bw=(W-(bars-1)*gap)/bars;
+    const amp=.35+.65*Math.abs(Math.sin(ph*.28));
+    for(let i=0;i<bars;i++){
+      const t=i/bars;
+      const h=amp*(0.25+0.75*Math.pow(Math.abs(Math.sin(t*Math.PI*4+ph)),1.2))*H*.9;
+      const x=i*(bw+gap);
+      const y=(H-h)/2;
+      const alpha=0.3+amp*0.7;
+      ctx.fillStyle=`rgba(35,165,90,${alpha})`;
+      ctx.beginPath();
+      ctx.roundRect(x,y,bw,h,2);
+      ctx.fill();
+    }
+    ph+=.1;
+    waveAF=requestAnimationFrame(draw);
+  }
+  draw();
+}
+
+function stopWaveform() { if(waveAF) cancelAnimationFrame(waveAF); }
+
+// ── MODAL (динамическая) ──
+const MODAL_CONTEXTS = {
+  mic: {
+    icon: '<svg viewBox="0 0 24 24"><path d="M19 11h-1.7c0 .74-.16 1.43-.43 2.05l1.23 1.23c.56-.98.9-2.09.9-3.28zm-4.02.17c0-.06.02-.11.02-.17V5c0-1.66-1.34-3-3-3S9 3.34 9 5v.18l5.98 5.99zM4.27 3L3 4.27l6.01 6.01V11c0 1.66 1.33 3 2.99 3 .22 0 .44-.03.65-.08l1.66 1.66c-.71.33-1.5.52-2.31.52-2.76 0-5.3-2.1-5.3-5.1H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c.91-.13 1.77-.45 2.54-.9L19.73 21 21 19.73 4.27 3z"/></svg>',
+    title: '需要登录才能发言',
+    desc: '为了保障通话安全与用户隐私，使用麦克风功能需要验证您的身份。注册仅需 30 秒。',
+    cta: '创建账户并开启麦克风',
+  },
+  register: {
+    icon: '<svg viewBox="0 0 24 24"><path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>',
+    title: '创建免费账户',
+    desc: '加入 50 万+ 用户，畅享高清语音通话。',
+    cta: '立即免费注册',
+  },
+  login: {
+    icon: '<svg viewBox="0 0 24 24"><path d="M11 7L9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5-5-5zm9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8v14z"/></svg>',
+    title: '登录你的账户',
+    desc: '欢迎回来！登录后可访问所有房间、通话记录和个人设置。',
+    cta: '登录账户',
+  },
+  create: {
+    icon: '<svg viewBox="0 0 24 24"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>',
+    title: '创建语音房间',
+    desc: '注册后即可创建专属语音房间，生成房间号分享给好友，一键开始通话。',
+    cta: '注册并创建房间',
+  },
+  pro: {
+    icon: '<svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4l5 2.18V11c0 3.5-2.33 6.79-5 7.93-2.67-1.14-5-4.43-5-7.93V7.18L12 5z"/></svg>',
+    title: '升级到专业版',
+    desc: '解锁 50 人房间、4K 屏幕共享、通话录音等高级功能。首月仅需 ¥1。',
+    cta: '立即升级专业版',
+  },
+};
+
+function openModal(context) {
+  const cfg = MODAL_CONTEXTS[context] || MODAL_CONTEXTS.register;
+  document.getElementById('modal-icon').innerHTML = cfg.icon;
+  document.getElementById('modal-title').textContent = cfg.title;
+  document.getElementById('modal-desc').textContent = cfg.desc;
+  document.getElementById('modal').classList.add('open');
+}
+
+function closeModal() {
+  document.getElementById('modal').classList.remove('open');
+}
+
+function tryUnmute() { openModal('mic'); }
+
+// ── JOIN TABS ──
+function switchJoinTab(tab) {
+  document.getElementById('jtab-join').classList.toggle('active', tab === 'join');
+  document.getElementById('jtab-create').classList.toggle('active', tab === 'create');
+  document.getElementById('jpanel-join').style.display = tab === 'join' ? '' : 'none';
+  document.getElementById('jpanel-create').style.display = tab === 'create' ? '' : 'none';
+  // generate random room preview number
+  if(tab === 'create') {
+    const n = Math.floor(100000 + Math.random() * 900000);
+    document.getElementById('preview-room-num').textContent = n;
+  }
+}
+
+function leaveCall() {
+  stopAll();
+  clearTimeout(modalTimeout);
+  closeModal();
+  clearChat();
+  showScreen('room');
+}
+
+function showCallEnded() {
+  const card = document.querySelector('#screen-room .room-card');
+  card.innerHTML = `
+    <div style="text-align:center;padding:16px 0 8px">
+      <div style="width:72px;height:72px;border-radius:50%;background:rgba(237,66,69,.12);
+        display:flex;align-items:center;justify-content:center;margin:0 auto 20px">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="var(--red)">
+          <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+        </svg>
+      </div>
+      <div style="font-size:20px;font-weight:700;margin-bottom:8px">通话已结束</div>
+      <div style="font-size:14px;color:var(--t3);line-height:1.7;margin-bottom:28px">
+        此通话已超时或被对方关闭。<br>如需继续请创建新的房间。
+      </div>
+      <button class="btn btn-accent btn-large" style="width:100%;margin-bottom:12px" onclick="openModal('create')">
+        创建新房间
+      </button>
+      <button class="btn btn-ghost" style="width:100%" onclick="goHome()">
+        返回首页
+      </button>
+    </div>
+  `;
+}
+
+function stopAll() { stopAudio(); stopTimer(); stopWaveform(); }
+
+// ── VOLUME ──
+let volOpen = false;
+let masterGainNode = null;
+
+function toggleVolume(e) {
+  e.stopPropagation();
+  volOpen = !volOpen;
+  document.getElementById('vol-popover').classList.toggle('open', volOpen);
+}
+
+function setVolume(val) {
+  const pct = parseInt(val);
+  document.getElementById('vol-val').textContent = pct + '%';
+  document.getElementById('vol-label').textContent = pct + '%';
+  // Update vol icon based on level
+  const icon = document.getElementById('vol-icon');
+  if(pct === 0) {
+    icon.innerHTML = '<path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>';
+  } else if(pct < 50) {
+    icon.innerHTML = '<path d="M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"/>';
+  } else {
+    icon.innerHTML = '<path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>';
+  }
+  // Apply to audio
+  currentVolume = pct / 100;
+  if(currentAudio) currentAudio.volume = currentVolume;
+  const btn = document.getElementById('vol-btn');
+  btn.classList.toggle('ctrl-muted', pct === 0);
+  btn.classList.toggle('ctrl-normal', pct > 0);
+}
+
+document.addEventListener('click', () => {
+  if(volOpen){ volOpen=false; document.getElementById('vol-popover').classList.remove('open'); }
+});
+
+// ── SETTINGS ──
+function openSettings() {
+  document.getElementById('smodal').classList.add('open');
+}
+function closeSettings() {
+  document.getElementById('smodal').classList.remove('open');
+}
+function switchTab(name, btn) {
+  document.querySelectorAll('.stab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.spanel').forEach(p=>p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('tab-'+name).classList.add('active');
+}
+document.getElementById('smodal').addEventListener('click',e=>{
+  if(e.target===document.getElementById('smodal')) closeSettings();
+});
+
+// ── CHAT ──
+function clearChat() {
+  document.getElementById('chat-messages').innerHTML =
+    `<div class="chat-empty" id="chat-empty">
+      <svg viewBox="0 0 24 24" fill="var(--border2)" width="32" height="32"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <span>暂无消息<br>发送第一条消息吧</span>
+    </div>`;
+}
+
+function addChatMessage(name, text, isSelf, avatarStyle) {
+  const box = document.getElementById('chat-messages');
+  const empty = document.getElementById('chat-empty');
+  if(empty) empty.remove();
+  const msg = document.createElement('div');
+  msg.className = 'chat-msg' + (isSelf ? ' self' : '');
+  msg.innerHTML = `
+    <div class="chat-msg-av" style="${avatarStyle||''}">${isSelf ? '你' : name.charAt(0)}</div>
+    <div class="chat-msg-body">
+      <div class="chat-msg-name">${name}</div>
+      <div class="chat-msg-bubble">${text}</div>
+    </div>`;
+  box.appendChild(msg);
+  box.scrollTop = box.scrollHeight;
+}
+
+function showTypingIndicator() {
+  const box = document.getElementById('chat-messages');
+  const empty = document.getElementById('chat-empty');
+  if(empty) empty.remove();
+  if(document.getElementById('typing-indicator')) return;
+  const el = document.createElement('div');
+  el.className = 'chat-msg'; el.id = 'typing-indicator';
+  el.innerHTML = `
+    <div class="chat-msg-av" style="background:linear-gradient(135deg,#a29bfe,#6c5ce7)">A</div>
+    <div class="chat-msg-body">
+      <div class="chat-msg-name">Anyaa ^_^</div>
+      <div class="chat-msg-bubble chat-typing">
+        <div class="typing-dots">
+          <div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div>
+        </div>
+      </div>
+    </div>`;
+  box.appendChild(el);
+  box.scrollTop = box.scrollHeight;
+}
+
+function removeTypingIndicator() {
+  const el = document.getElementById('typing-indicator');
+  if(el) el.remove();
+}
+
+function trySendChat() {
+  const input = document.getElementById('chat-input');
+  if(!input.value.trim()) return;
+  openModal('register');
+}
+
+function autoResizeChat(el) {
+  el.style.height = 'auto';
+  el.style.height = Math.min(el.scrollHeight, 80) + 'px';
+}
+
+// ── TYPING SOUND ──
+function playTypingSound(durationMs) {
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    const clicks = Math.floor(durationMs / 80);
+    for(let i = 0; i < clicks; i++) {
+      const t = ctx.currentTime + i * 0.08 + Math.random() * 0.02;
+      const buf = ctx.createBuffer(1, Math.floor(ctx.sampleRate * 0.03), ctx.sampleRate);
+      const d = buf.getChannelData(0);
+      for(let j = 0; j < d.length; j++) d[j] = (Math.random()*2-1) * Math.exp(-j/(ctx.sampleRate*0.008));
+      const src = ctx.createBufferSource(); src.buffer = buf;
+      const g = ctx.createGain(); g.gain.value = 0.07 + Math.random()*0.05;
+      src.connect(g); g.connect(ctx.destination);
+      src.start(t);
+    }
+    setTimeout(() => ctx.close(), durationMs + 500);
+  } catch(e) {}
+}
+
+// вызывается из playTrack когда заканчивается трек с индексом 1 (второй)
+function triggerAlexMessage() {
+  setTimeout(showTypingIndicator, 300);
+  setTimeout(() => {
+    removeTypingIndicator();
+    const user = USERS[0];
+    const avStyle = user.avatar
+      ? `background-image:url(${user.avatar});background-size:cover;background-position:center;background-color:transparent`
+      : `background:${user.bg}`;
+    addChatMessage('Anyaa ^_^', '你能听到我说话吗？', false, avStyle);
+  }, 2400);
+}
+
+function showToast(msg, type) {
+  const c = document.getElementById('toast-container');
+  const t = document.createElement('div');
+  t.className = 'toast ' + type;
+  const icon = type === 'success'
+    ? '<svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>'
+    : '<svg viewBox="0 0 24 24"><path d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>';
+  t.innerHTML = icon + msg;
+  c.appendChild(t);
+  requestAnimationFrame(() => { requestAnimationFrame(() => t.classList.add('show')); });
+  setTimeout(() => {
+    t.classList.remove('show');
+    setTimeout(() => t.remove(), 300);
+  }, 3500);
+}
+
+function authUnavailable() {
+  showToast('该登录方式在您的地区暂不可用', 'error');
+}
+
+function authSteam() {
+  showToast('正在通过 Steam 登录，请稍候…', 'success');
+}
+
+function doRegister() {
+  // legacy — no-op
+}
+
+// close modal on backdrop click
+document.getElementById('modal').addEventListener('click',e=>{
+  if(e.target===document.getElementById('modal')) closeModal();
+});
+
+// online counter flicker
+let cnt=1247;
+setInterval(()=>{
+  cnt+=Math.floor(Math.random()*7)-3;
+  cnt=Math.max(1200,Math.min(1310,cnt));
+  const el=document.getElementById('online-count');
+  if(el) el.textContent=cnt.toLocaleString('zh-CN');
+},2800);
+
+// ── AUTO-JOIN FROM URL ──
+// Поддерживаемые форматы:
+//   /anya/840137
+//   /840137
+//   /?room=840137
+(function(){
+  const params = new URLSearchParams(window.location.search);
+  const segments = window.location.pathname.replace(/^\/+|\/+$/g,'').split('/');
+  // ищем 6-значный номер в сегментах пути или query-параметре room=
+  const roomFromPath = segments.find(s => /^\d{6}$/.test(s));
+  const roomFromQuery = params.get('room');
+  const autoRoom = roomFromPath || roomFromQuery;
+
+  if(autoRoom) {
+    const input = document.getElementById('room-input');
+    if(input) input.value = autoRoom;
+    // Запускаем joinRoom() после того как DOM полностью готов
+    window.addEventListener('DOMContentLoaded', () => {}, false);
+    joinRoom();
+  }
+})();
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"93340d8a98824743a32cc5fd210ab20b","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
