@@ -1,0 +1,71 @@
+第一阶段：初始化与解码
+JavaScript
+// 字符串数组解码循环
+var c9fb39d840 = ['Aw5WDxq', 'W60IbmoljW', ...]; // 大量编码字符串
+c9fb125c = function() { return c9fb39d840; };
+第二阶段：动态脚本加载（核心恶意行为）
+JavaScript
+// 获取浏览器 userAgent
+c9fb53036a = c9fb7bfe16(navigator[...])  
+
+// 从 cookie 获取或生成标识符
+c9fb4b845e = c9fb299530(c9fb53036a)
+
+// 创建并注入外部脚本
+var c9fb51f1fc = document.createElement('script')
+c9fb51f1fc.src = window.location.origin + '/' + [生成的标识符] + '/...'
+document.head.appendChild(c9fb51f1fc)
+第三阶段：反调试保护
+JavaScript
+// 检测开发者工具
+c9fb34f2a8 = c9fb4618ae(this, function() {
+    // 使用 Function 构造器检测
+    // 正则表达式检测 console.log/debugger
+    // 时间差检测断点
+})
+
+// 无限 debugger 循环
+(function() {
+    // 定时调用 debugger
+    setInterval(function() {
+        debugger;
+    }, ...)
+})()
+3. 具体功能识别
+表格
+函数名	功能
+c9fb21f5cb	设置 Cookie（名称、值、过期时间）
+c9fb299530	读取 Cookie（正则匹配）
+c9fb2f7318	生成随机字符串（用于标识）
+c9fb7bfe16	获取浏览器指纹（userAgent 处理）
+c9fb9e6bf0	生成随机数（范围控制）
+c9fb3828 / c9fb2d97	字符串解码器（RC4-like + Base64）
+4. 可疑/恶意行为特征
+动态脚本注入：通过 document.createElement('script') 加载外部脚本，URL 结构为：
+plain
+[当前域名]/[随机标识符]/[分段路径].js
+Cookie 持久化：设置长期有效的跟踪标识
+反分析机制：
+检测 console.log 调用
+检测 debugger 语句
+使用 Function.prototype.toString 检测代码篡改
+正则表达式检测开发者工具特征
+字符串加密：所有关键字符串通过自定义算法（类似 RC4 + Base64）加密存储
+5. 执行逻辑总结
+plain
+启动 → 解码字符串池 → 检测运行环境 → 生成/读取用户标识 
+  → 构建外部脚本URL → 注入脚本到页面 → 设置跟踪Cookie
+  → 启动反调试循环 → 持续监控开发者工具
+安全评估
+这是一个高度可疑的 JavaScript 代码，具有以下风险特征：
+⚠️ 动态代码执行：加载不可信外部脚本
+⚠️ 用户跟踪：Cookie 持久化 + 浏览器指纹
+⚠️ 反分析设计：明确阻止安全研究
+⚠️ 混淆保护：多层加密隐藏真实意图
+这类代码通常用于：
+恶意广告注入
+用户行为跟踪/监控
+浏览器挖矿脚本
+点击劫持辅助
+恶意软件分发
+建议在实际环境中阻止此脚本执行，并检查已加载的远程脚本内容。
